@@ -9,7 +9,7 @@
 <body class="page-form">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишка">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -28,7 +28,81 @@
         </li>
       </ul>
     </nav>
+
+    <h1 class="hero__title">Вязание на заказ</h1>
   </header>
+
+  <main>
+    <h2 class="visually-hidden">Форма заказа</h2>
+
+    <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
+
+      <fieldset class="order-form__fieldset fieldset-type">
+        <legend class="order-form__legend">Тип</legend>
+        <input value="Аксессуар для интерьера" type="radio" name="type" id="accessories" checked>
+        <label for="accessories">Аксессуар для интерьера</label>
+        <input value="Детская игрушка" type="radio" name="type" id="toy">
+        <label for="toy">Детская игрушка</label>
+      </fieldset>
+
+
+      <fieldset class="order-form__fieldset fieldset-color">
+        <legend class="order-form__legend">Цвет</legend>
+        <input type="checkbox" name="color" value="Белый" id="white" checked>
+        <label for="bosch">Белый</label>
+        <input type="checkbox" name="color" value="Серый" id="gray" checked>
+        <label for="interskol">Серый</label>
+        <input type="checkbox" name="color" value="«Тиффани»" id="tiffany">
+        <label for="makita">«Тиффани»</label>
+        <input type="checkbox" name="color" value="Черный" id="black">
+        <label for="dewalt">Черный</label>
+        <input type="checkbox" name="color" value="Розовый" id="pink">
+        <label for="hitachi">Розовый</label>
+        <input type="checkbox" name="color" value="Оранжевый" id="orange">
+        <label for="hitachi">Оранжевый</label>
+      </fieldset>
+
+      <fieldset class="order-form__fieldset fieldset-fio">
+        <legend class="order-form__legend">ФИО</legend>
+        <div class="order-form__input-wrapper">
+          <label for="name">Имя:</label>
+          <input placeholder="Введите ваше имя*" type="text" name="name" id="name">
+        </div>
+        <div class="order-form__input-wrapper">
+          <label for="surname">Фамилия:</label>
+          <input placeholder="Укажите фамилию*" type="text" name="surname" id="surname">
+        </div>
+        <div class="order-form__input-wrapper">
+          <label for="patronymic">Отчество:</label>
+          <input placeholder="Отчество, если желаете" type="text" name="patronymic" id="patronymic">
+        </div>
+      </fieldset>
+
+      <fieldset class="order-form__fieldset fieldset-tel">
+        <legend class="order-form__legend">Тел</legend>
+        <input placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" id="phone" name="phone">
+      </fieldset>
+
+      <fieldset class="order-form__fieldset fieldset-email">
+        <legend class="order-form__legend">E-mail</legend>
+        <input placeholder="Ваш Email*" type="text" name="email" id="email">
+      </fieldset>
+
+      <fieldset class="order-form__fieldset fieldset-comment">
+        <legend class="order-form__legend">Доп</legend>
+        <textarea placeholder="Опишите все ваши
+        пожелания к заказу" name="comment"></textarea>
+      </fieldset>
+
+      <small class="order-form__note"><sup>*</sup>Поля обязательны для заполнения</small>
+
+      <button class="order-form__submit button" type="submit">
+        Отправить заказ
+      </button>
+    </form>
+
+
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__social social">
