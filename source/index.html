@@ -4,40 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body classn="page-index">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+<body class="page-index">
+  <header class="header">
+    <div class="header__nav-wrapper">
+      <a class="header__logo">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+    <div class="header__image-wrapper">
+      <h1 class="header__title">Милые штуки ручной работы для дома</h1>
+    </div>
 
-    <ul class="page-header__categories categories">
+    <ul class="header__categories categories">
       <li class="categories__item"><a href="#">Предметы интерьера</a></li>
       <li class="categories__item"><a href="#">Детские игрушки</a></li>
     </ul>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <article class="product-of-week">
       <h2 class="product-of-week__title">
         Вязаные корзинки
@@ -140,9 +146,9 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
 
-    <div class="page-footer__contacts contacts">
+    <div class="footer__contacts contacts">
       <b class="contacts__title">Контакты</b>
 
       <table class="contacts__table">
@@ -172,7 +178,7 @@
       <a href="#" class="contacts__write-us button">Напишите нам</a>
     </div>
 
-    <div class="page-footer__social social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
@@ -191,7 +197,7 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>

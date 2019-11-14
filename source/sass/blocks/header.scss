@@ -1,0 +1,39 @@
+.header__nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 79px;
+
+  position: relative;
+
+  background-color: $white-four;
+}
+
+.header__logo {
+  margin: 22px 0;
+}
+
+.header__image-wrapper {
+  background-image: url('../../img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  width: 322px;
+  height: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 39px;
+  box-sizing: border-box;
+}
+
+.header__title {
+  font-size: 27px;
+  line-height: 1.11;
+  color: $very-dark-brown;
+  font-weight: $font-weight-bold;
+  text-align: center;
+}
