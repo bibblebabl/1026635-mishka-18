@@ -1,0 +1,33 @@
+.contacts {
+  padding-top: 40px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.67;
+
+  color: $black-three;
+
+  padding-left: 30px;
+}
+
+.contacts__table {
+  margin: 30px 30px 40px;
+}
+
+.contacts__text {
+  font-size: 15px;
+  font-weight: 300;
+
+  text-align: left;
+
+  color: $greyish-brown;
+
+  vertical-align: text-top;
+}
+
+.contacts__write-us {
+  margin: 39px auto;
+}
