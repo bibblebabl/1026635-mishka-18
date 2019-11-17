@@ -18,11 +18,11 @@
   max-width: 210px;
 
   font-size: 17px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 
   line-height: 1.41;
 
-  color: $black-four;
+  color: $black;
 }
 
 .product-card__info {

@@ -3,19 +3,15 @@ $white: #ffffff;
 $white-four: #ececec;
 $white-two: #f1f1f1;
 
-$black-three: #000000;
-$black-four: #000000;
-
+$black: #000000;
 $very-dark-brown: #010000;
-
 $greyish-brown: #444444;
-
 $seafoam-blue: #63d1bb;
 
 // fonts
-$default-font-family: opensans, helvetica, sans-serif;
+$font-family-default: opensans, helvetica, sans-serif;
+$font-weight-default: 300;
+$font-color-default: #444444;
+$font-size-default: 15px;
 
-$default-font-weight: 300;
-
-$default-font-color: #444444;
-$default-font-size: 15px;
+$font-weight-bold: 600;

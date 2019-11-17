@@ -11,12 +11,10 @@
 }
 
 .header__nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-vertical-center;
 
   width: 100%;
-  height: 79px;
+  min-height: 79px;
 
   position: relative;
 
@@ -33,7 +31,6 @@
   background-position: 50%;
 
   width: 100%;
-  height: 280px;
 
   display: flex;
   justify-content: center;
@@ -44,7 +41,7 @@
 .header__title {
   font-size: 27px;
   line-height: 1.11;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 
   color: $very-dark-brown;
 

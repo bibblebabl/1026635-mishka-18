@@ -8,9 +8,9 @@
 
 .copyright__text {
   font-size: 19px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 
-  color: $black-four;
+  color: $black;
 
   margin-right: 30px;
 }
@@ -20,6 +20,6 @@
     height: 34px;
     width: 27px;
 
-    fill: #63d1bb;
+    fill: $seafoam-blue;
   }
 }

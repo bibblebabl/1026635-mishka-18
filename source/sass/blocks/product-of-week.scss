@@ -4,14 +4,14 @@
 
 .product-of-week__title {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 1.2;
-  color: $black-three;
+  color: $black;
 }
 
 .product-of-week__subtitle {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 1.18;
   color: $seafoam-blue;
 }
@@ -20,7 +20,7 @@
   display: block;
 
   font-size: 17px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 1.41;
 
   color: $greyish-brown;

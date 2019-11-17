@@ -1,8 +1,6 @@
 .how-its-done {
   @include flex-vertical-center;
 
-  min-height: 503px;
-
   margin: 0 30px 58px;
   padding-bottom: 33px;
 
@@ -15,10 +13,10 @@
 
 .how-its-done__title {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 1.41;
 
-  color: $black-four;
+  color: $black;
 
   max-width: 126px;
 

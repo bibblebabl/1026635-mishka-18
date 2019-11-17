@@ -4,11 +4,11 @@
 
 .contacts__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 
   line-height: 1.67;
 
-  color: $black-three;
+  color: $black;
 
   padding-left: 30px;
 }

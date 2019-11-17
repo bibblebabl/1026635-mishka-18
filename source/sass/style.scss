@@ -4,7 +4,6 @@
 
 // base
 @import "./base/layout.scss";
-@import "./base/normalize.scss";
 @import "./base/typography.scss";
 
 // blocks
@@ -24,5 +23,5 @@
 @import "./blocks/product-of-week.scss";
 @import "./blocks/products-list.scss";
 @import "./blocks/reviews.scss";
-// @import "./blocks/site-list.scss";
+@import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
