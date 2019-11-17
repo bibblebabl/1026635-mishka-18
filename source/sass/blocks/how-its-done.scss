@@ -1,0 +1,35 @@
+.how-its-done {
+  @include flex-vertical-center;
+
+  min-height: 503px;
+
+  margin: 0 30px 58px;
+  padding-bottom: 33px;
+
+  border: solid 1px $white-four;
+
+}
+
+.how-its-done__image-wrapper {
+  width: 100%;
+}
+
+.how-its-done__title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.41;
+
+  color: $black-four;
+
+  max-width: 126px;
+
+  margin: 29px 0 26px;
+}
+
+.how-its-done__description {
+  padding: 34px 43px 29px 34px;
+}
+
+.how-its-done__order {
+  width: 192px;
+}

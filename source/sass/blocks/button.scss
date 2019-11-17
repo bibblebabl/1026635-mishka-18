@@ -1,6 +1,5 @@
 .button {
   display: inline-block;
-  box-sizing: border-box;
 
   width: 260px;
   max-width: 100%;
@@ -17,4 +16,8 @@
   color: $greyish-brown;
   border: solid 2px $greyish-brown;
   background-color: $white;
+
+  &--small {
+    max-width: 192px;
+  }
 }
