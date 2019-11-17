@@ -1,3 +1,25 @@
 .copyright {
-  background-color: $white-two;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: 600;
+
+  color: $black-four;
+
+  margin-right: 30px;
+}
+
+.copyright__link {
+  svg {
+    height: 34px;
+    width: 27px;
+
+    fill: #63d1bb;
+  }
 }

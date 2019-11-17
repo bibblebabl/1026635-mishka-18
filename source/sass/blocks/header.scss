@@ -1,3 +1,15 @@
+.header {
+  &--hero {
+    background-image: url("../../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+
+  &--gray {
+    background-color: $white-two;
+  }
+}
+
 .header__nav-wrapper {
   display: flex;
   align-items: center;
@@ -33,7 +45,15 @@
 .header__title {
   font-size: 27px;
   line-height: 1.11;
+  font-weight: 600;
+
   color: $very-dark-brown;
-  font-weight: $font-weight-bold;
+
   text-align: center;
+
+  padding: 76px 0 74px;
+
+  &--hero {
+    padding: 76px 0 120px;
+  }
 }

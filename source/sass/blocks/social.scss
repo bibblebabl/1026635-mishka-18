@@ -1,15 +1,19 @@
 .social {
-  width: 100%;
+  min-height: 80px;
 
-  background-color: $white-two;
+  padding: 25px 0 27px;
+
+  box-sizing: border-box;
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 
-  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social__item {
+  margin: 0 20px;
 }

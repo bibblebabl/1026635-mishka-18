@@ -4,35 +4,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>HTML Academy: Мишка - Каталог товаров</title>
 </head>
 
 <body class="page-catalog">
 
-  <header class="header">
+  <header class="header header--gray">
 
-    <a class="header__logo">
-      <img class="header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка">
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__nav-wrapper">
+      <a class="header__logo">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <h1 class="header__title">Каталог товаров</h1>
   </header>
@@ -45,41 +47,59 @@
 
         <li class="products-list__item product-card">
 
-          <img src="https://via.placeholder.com/260x195" alt="" class="product-card__image">
-          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-
-          <small class="product-card__size">Рост 30 см, вес 200 г</small>
-
-          <div class="product-card__footer">
-            <b class="product-card__price">1 200 руб.</b>
-            <a class="product-card__cart" href="#">Добавить в корзину</a>
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" width="260" height="195" src="./img/photo-hare-mobile@1x.jpg"
+              alt="Зайчик-попрыгайчик">
           </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+
+            <small class="product-card__size">Рост 30 см, вес 200 г</small>
+
+            <div class="product-card__footer">
+              <b class="product-card__price">1 200 руб.</b>
+              <a class="product-card__cart" href="#">Добавить в корзину</a>
+            </div>
+        </li>
+        </div>
+
+
+        <li class="products-list__item product-card">
+
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" width="260" height="195" src="./img/photo-bowl-mobile@1x.jpg"
+              alt="Корзинка для белья">
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Корзинка для белья</h3>
+
+            <small class="product-card__size">Диаметр 15 см, высота 10 см</small>
+
+            <div class="product-card__footer">
+              <b class="product-card__price">690 руб.</b>
+              <a class="product-card__cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
+
         </li>
 
         <li class="products-list__item product-card">
 
-          <img src="https://via.placeholder.com/260x195" alt="" class="product-card__image">
-          <h3 class="product-card__title">Корзинка для белья</h3>
-
-          <small class="product-card__size">Диаметр 15 см, высота 10 см</small>
-
-          <div class="product-card__footer">
-            <b class="product-card__price">690 руб.</b>
-            <a class="product-card__cart" href="#">Добавить в корзину</a>
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" width="260" height="195" src="./img/photo-toys-mobile@1x.jpg"
+              alt="Большая корзинка для игрушек">
           </div>
-        </li>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Большая корзинка для игрушек</h3>
 
-        <li class="products-list__item product-card">
+            <small class="product-card__size">Диаметр 30 см, высота 30 см</small>
 
-          <img src="https://via.placeholder.com/260x195" alt="" class="product-card__image">
-          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-
-          <small class="product-card__size">Диаметр 30 см, высота 30 см</small>
-
-          <div class="product-card__footer">
-            <b class="product-card__price">1 500 руб.</b>
-            <a class="product-card__cart" href="#">Добавить в корзину</a>
+            <div class="product-card__footer">
+              <b class="product-card__price">1 500 руб.</b>
+              <a class="product-card__cart" href="#">Добавить в корзину</a>
+            </div>
           </div>
+
         </li>
 
       </ul>
@@ -89,7 +109,7 @@
       <h2 class="how-its-done__title">Процесс производства</h2>
 
       <div class="how-its-done__image-wrapper">
-        <img class="how-its-done__image" src="https://via.placeholder.com/260x195" alt="Процесс производства">
+        <img class="how-its-done__image" src="./img/photo-hare-mobile@1x.jpg" alt="Процесс производства">
       </div>
 
       <a class="how-its-done__order button" href="#">Сделать заказ</a>
@@ -101,25 +121,32 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            Мы в Инстаграме
+          <a class="social__link social__link--instagram" aria-label="Инстаграм"
+            href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-insta.svg" alt="Вконтакте" width="22" height="21">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            Мы в Фейсбуке
+          <a class="social__link social__link--facebook" aria-label="Фейсбук"
+            href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-fb.svg" alt="Фейсбук" width="15" height="28">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-            Мы в Твиттере
+          <a class="social__link social__link--twitter" aria-label="Твиттер" href="https://twitter.com/htmlacademy">
+            <img src="img/icon-twitter.svg" alt="Твиттер" width="23" height="20">
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" viewBox="0 0 60 60">
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+        </svg>
+
+      </a>
     </div>
   </footer>
 </body>

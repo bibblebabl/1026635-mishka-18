@@ -11,7 +11,7 @@
 </head>
 
 <body class="page-index">
-  <header class="header">
+  <header class="header header--hero">
     <div class="header__nav-wrapper">
       <a class="header__logo">
         <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -35,9 +35,7 @@
       </nav>
     </div>
 
-    <div class="header__image-wrapper">
-      <h1 class="header__title">Милые штуки ручной работы для дома</h1>
-    </div>
+    <h1 class="header__title header__title--hero">Милые штуки <br />ручной<br />работы для дома</h1>
 
     <ul class="header__categories categories">
       <li class="categories__item"><a href="#">Предметы интерьера</a></li>
@@ -81,7 +79,8 @@
         </tr>
       </table>
       <div class="product-of-week__image-wrapper">
-        <img src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели" class="product-of-week__image">
+        <img src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели"
+          class="product-of-week__image">
       </div>
       <span class="product-of-week__price">
         Цена: 990 руб.
@@ -146,18 +145,15 @@
         <a href="#" class="reviews__write button">Написать</a>
       </div>
     </section>
-  </main>
-
-  <footer class="footer">
-
-    <div class="footer__contacts contacts">
+    <section class="contacts">
       <b class="contacts__title">Контакты</b>
 
       <table class="contacts__table">
         <tr>
           <td class="contacts__text">e-mail:</td>
           <td class="contacts__value">
-            <a class="contacts__link contacts__value--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__link contacts__value--email"
+              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </td>
         </tr>
         <tr>
@@ -178,30 +174,36 @@
       </div>
 
       <a href="#" class="contacts__write-us button">Напишите нам</a>
-    </div>
+    </section>
+  </main>
 
+  <footer class="footer">
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            Мы в Инстаграме
+          <a class="social__link social__link--instagram" aria-label="Инстаграм"
+            href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-insta.svg" alt="Вконтакте" width="22" height="21">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            Мы в Фейсбуке
+          <a class="social__link social__link--facebook" aria-label="Фейсбук"
+            href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-fb.svg" alt="Фейсбук" width="15" height="28">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
-            Мы в Твиттере
+          <a class="social__link social__link--twitter" aria-label="Твиттер" href="https://twitter.com/htmlacademy">
+            <img src="img/icon-twitter.svg" alt="Твиттер" width="23" height="20">
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+      </a>
     </div>
   </footer>
 </body>
