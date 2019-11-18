@@ -2,10 +2,6 @@
   padding: 0 30px;
 }
 
-.order-form__note {
-  margin: 29px 0 34px;
-}
-
 .order-form__fieldset {
   @include flex-vertical-center;
   @include no-margin-no-padding;
@@ -47,7 +43,6 @@
   border: solid 2px $greyish-brown;
   background-color: $white;
 
-  font-family: OpenSans;
   font-size: 17px;
   line-height: 1.06;
   text-align: left;

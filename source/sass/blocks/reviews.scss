@@ -51,11 +51,11 @@
   background-position: 50% 50%;
 
   &--left {
-    background-image: url('../img/icon-left-arrow.svg');
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--right {
-    background-image: url('../img/icon-right-arrow.svg');
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 
