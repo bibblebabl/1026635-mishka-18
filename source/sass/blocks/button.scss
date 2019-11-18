@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+
+  width: 100%;
+  max-width: 260px;
+
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+
+  padding: 20px 0;
+  vertical-align: middle;
+
+  color: $greyish-brown;
+  border: solid 2px $greyish-brown;
+  background-color: $white;
+
+  &--small {
+    max-width: 192px;
+  }
+}

@@ -1,0 +1,27 @@
+//abstracts
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixins.scss";
+
+// base
+@import "./base/layout.scss";
+@import "./base/typography.scss";
+
+// blocks
+@import "./blocks/button.scss";
+@import "./blocks/categories.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/features.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/how-its-done.scss";
+@import "./blocks/main-nav.scss";
+// @import "./blocks/main.scss";
+// @import "./blocks/order-form.scss";
+// @import "./blocks/product-card.scss";
+// @import "./blocks/product-characteristics.scss";
+@import "./blocks/product-of-week.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";

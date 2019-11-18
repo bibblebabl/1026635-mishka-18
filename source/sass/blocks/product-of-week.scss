@@ -1,0 +1,30 @@
+.product-of-week {
+  padding: 34px 32px 0;
+}
+
+.product-of-week__title {
+  font-size: 25px;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  color: $black;
+}
+
+.product-of-week__subtitle {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  line-height: 1.18;
+  color: $seafoam-blue;
+}
+
+.product-of-week__price {
+  display: block;
+
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  line-height: 1.41;
+
+  color: $greyish-brown;
+  text-align: center;
+
+  margin-bottom: 28px;
+}

@@ -1,0 +1,32 @@
+.products-list {
+  @include reset-list;
+  @include flex-vertical-center;
+}
+
+.products-list__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+}
+
+.product-card__image-wrapper {
+  font-size: 0;
+}
+
+.product-card__title {
+  max-width: 210px;
+
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+
+  line-height: 1.41;
+
+  color: $black;
+}
+
+.product-card__info {
+  padding: 12px 0 30px 28px;
+
+  border: solid 1px $gray-dark;
+}

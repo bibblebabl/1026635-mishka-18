@@ -2,7 +2,7 @@
   "name": "mishka-18",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
@@ -37,5 +37,6 @@
   ],
   "engines": {
     "node": "8.16"
-  }
+  },
+  "dependencies": {}
 }

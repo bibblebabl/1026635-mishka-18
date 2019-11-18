@@ -1,0 +1,17 @@
+.social {
+  min-height: 80px;
+
+  padding: 25px 0 27px;
+}
+
+.social__list {
+  @include reset-list;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 20px;
+}

@@ -3,33 +3,39 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+
   <title>HTML Academy: Мишка - Вязание на заказ</title>
 </head>
 
 <body class="page-form">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="header header--gray">
 
-    <h1 class="page-header__title">Вязание на заказ</h1>
+    <div class="header__nav-wrapper">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1 class="header__title">Вязание на заказ</h1>
   </header>
 
   <main>
@@ -49,17 +55,17 @@
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Цвет</legend>
         <input type="checkbox" name="color" value="Белый" id="white" checked>
-        <label for="bosch">Белый</label>
+        <label for="white">Белый</label>
         <input type="checkbox" name="color" value="Серый" id="gray" checked>
-        <label for="interskol">Серый</label>
+        <label for="gray">Серый</label>
         <input type="checkbox" name="color" value="«Тиффани»" id="tiffany">
-        <label for="makita">«Тиффани»</label>
+        <label for="tiffany">«Тиффани»</label>
         <input type="checkbox" name="color" value="Черный" id="black">
-        <label for="dewalt">Черный</label>
+        <label for="black">Черный</label>
         <input type="checkbox" name="color" value="Розовый" id="pink">
-        <label for="hitachi">Розовый</label>
+        <label for="pink">Розовый</label>
         <input type="checkbox" name="color" value="Оранжевый" id="orange">
-        <label for="hitachi">Оранжевый</label>
+        <label for="orange">Оранжевый</label>
       </fieldset>
 
       <fieldset class="order-form__fieldset">
@@ -104,29 +110,37 @@
 
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__social social">
+  <footer class="footer">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            Мы в Инстаграме
+          <a class="social__link social__link--instagram" aria-label="Инстаграм"
+            href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-insta.svg" alt="Вконтакте" width="22" height="21">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            Мы в Фейсбуке
+          <a class="social__link social__link--facebook" aria-label="Фейсбук"
+            href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-fb.svg" alt="Фейсбук" width="15" height="28">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-            Мы в Твиттере
+          <a class="social__link social__link--twitter" aria-label="Твиттер" href="https://twitter.com/htmlacademy">
+            <img src="img/icon-twitter.svg" alt="Твиттер" width="23" height="20">
           </a>
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" viewBox="0 0 60 60">
+          <path
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
+
+      </a>
     </div>
   </footer>
 </body>
