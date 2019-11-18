@@ -30,3 +30,36 @@
     color: $greyish-brown;
   }
 }
+
+.reviews__controls {
+  display: flex;
+
+  width: 100%;
+}
+
+.reviews__control {
+  @include no-margin-no-padding;
+  @include hide-text-content;
+
+  flex: 1;
+  height: 52px;
+
+  background-color: $white;
+  border: solid 1px $gray-light;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--left {
+    background-image: url('../img/icon-left-arrow.svg');
+  }
+
+  &--right {
+    background-image: url('../img/icon-right-arrow.svg');
+  }
+}
+
+.reviews__write {
+  margin-top: 38px;
+  margin-bottom: 45px;
+}

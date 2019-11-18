@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: block;
 
   width: 100%;
   max-width: 260px;
@@ -11,7 +11,6 @@
   font-weight: $font-weight-bold;
 
   padding: 20px 0;
-  vertical-align: middle;
 
   color: $greyish-brown;
   border: solid 2px $greyish-brown;
@@ -19,5 +18,10 @@
 
   &--small {
     max-width: 192px;
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
