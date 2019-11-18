@@ -1,12 +1,10 @@
 .header {
+  background-color: $gray-light;
+
   &--hero {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 30%;
-  }
-
-  &--gray {
-    background-color: $white-two;
   }
 }
 
@@ -18,7 +16,7 @@
 
   position: relative;
 
-  background-color: $white-four;
+  background-color: $white;
 }
 
 .header__logo {
