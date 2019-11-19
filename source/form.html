@@ -39,70 +39,94 @@
   </header>
 
   <main>
+
     <h2 class="visually-hidden">Форма заказа</h2>
 
     <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
 
+      <p class="order-form__note">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.
+      </p>
+
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Тип</legend>
-        <input value="Аксессуар для интерьера" type="radio" name="type" id="accessories" checked>
-        <label for="accessories">Аксессуар для интерьера</label>
-        <input value="Детская игрушка" type="radio" name="type" id="toy">
-        <label for="toy">Детская игрушка</label>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" value="Аксессуар для интерьера" type="radio" name="type" id="accessories"
+            checked>
+          <label class="order-form__label" for="accessories">Аксессуар для интерьера</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" value="Детская игрушка" type="radio" name="type" id="toy">
+          <label class="order-form__label" for="toy">Детская игрушка</label>
+        </div>
       </fieldset>
 
 
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Цвет</legend>
-        <input type="checkbox" name="color" value="Белый" id="white" checked>
-        <label for="white">Белый</label>
-        <input type="checkbox" name="color" value="Серый" id="gray" checked>
-        <label for="gray">Серый</label>
-        <input type="checkbox" name="color" value="«Тиффани»" id="tiffany">
-        <label for="tiffany">«Тиффани»</label>
-        <input type="checkbox" name="color" value="Черный" id="black">
-        <label for="black">Черный</label>
-        <input type="checkbox" name="color" value="Розовый" id="pink">
-        <label for="pink">Розовый</label>
-        <input type="checkbox" name="color" value="Оранжевый" id="orange">
-        <label for="orange">Оранжевый</label>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="Белый" id="white" checked>
+          <label class="order-form__label" for="white">Белый</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="Серый" id="gray" checked>
+          <label class="order-form__label" for="gray">Серый</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="«Тиффани»" id="tiffany">
+          <label class="order-form__label" for="tiffany">«Тиффани»</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="Черный" id="black">
+          <label class="order-form__label" for="black">Черный</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="Розовый" id="pink">
+          <label class="order-form__label" for="pink">Розовый</label>
+        </div>
+        <div class="order-form__input-wrapper">
+          <input class="order-form__input" type="checkbox" name="color" value="Оранжевый" id="orange">
+          <label class="order-form__label" for="orange">Оранжевый</label>
+        </div>
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">ФИО</legend>
         <div class="order-form__input-wrapper">
-          <label for="name">Имя:</label>
-          <input placeholder="Введите ваше имя*" type="text" name="name" id="name">
+          <label class="order-form__label" for="name">Имя:</label>
+          <input class="order-form__input" placeholder="Введите ваше имя*" type="text" name="name" id="name">
         </div>
         <div class="order-form__input-wrapper">
-          <label for="surname">Фамилия:</label>
-          <input placeholder="Укажите фамилию*" type="text" name="surname" id="surname">
+          <label class="order-form__label" for="surname">Фамилия:</label>
+          <input class="order-form__input" placeholder="Укажите фамилию*" type="text" name="surname" id="surname">
         </div>
         <div class="order-form__input-wrapper">
-          <label for="patronymic">Отчество:</label>
-          <input placeholder="Отчество, если желаете" type="text" name="patronymic" id="patronymic">
+          <label class="order-form__label" for="patronymic">Отчество:</label>
+          <input class="order-form__input" placeholder="Отчество, если желаете" type="text" name="patronymic"
+            id="patronymic">
         </div>
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Тел</legend>
-        <input placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" id="phone" name="phone">
+        <input class="order-form__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" id="phone" name="phone">
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">E-mail</legend>
-        <input placeholder="Ваш Email*" type="text" name="email" id="email">
+        <input class="order-form__input" placeholder="Ваш Email*" type="text" name="email" id="email">
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Доп</legend>
-        <textarea placeholder="Опишите все ваши
-        пожелания к заказу" name="comment"></textarea>
+        <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"
+          name="comment"></textarea>
       </fieldset>
 
       <small class="order-form__note"><sup>*</sup>Поля обязательны для заполнения</small>
 
-      <button class="order-form__submit button" type="submit">
+      <button class="order-form__submit button button--center" type="submit">
         Отправить заказ
       </button>
     </form>

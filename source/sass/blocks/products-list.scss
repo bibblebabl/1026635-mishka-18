@@ -1,17 +1,24 @@
 .products-list {
   @include reset-list;
   @include flex-vertical-center;
+
+  padding: 0 30px;
 }
 
 .products-list__item {
   display: flex;
   flex-direction: column;
 
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .product-card__image-wrapper {
   font-size: 0;
+}
+
+.product-card__image {
+  width: 100%;
 }
 
 .product-card__title {
