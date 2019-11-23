@@ -1,5 +1,6 @@
 .categories {
   @include reset-list;
+
 }
 
 .categories__item {
@@ -17,5 +18,18 @@
     display: inline-block;
     color: $white;
     max-width: 106px;
+  }
+
+  &--dark {
+    background-color: $greeny-blue;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .categories {
+    display: flex;
+    padding: 0 51px;
+    margin-top: -104px;
   }
 }
