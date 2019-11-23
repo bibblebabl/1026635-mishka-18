@@ -4,7 +4,7 @@
   &--hero {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 50%;
   }
 }
 
@@ -20,20 +20,9 @@
 }
 
 .header__logo {
-  margin: 22px 0;
-}
+  // margin: 22px 51px;
+  max-height: 79px;
 
-.header__image-wrapper {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 39px;
 }
 
 .header__title {
@@ -46,8 +35,34 @@
   text-align: center;
 
   padding: 76px 0 74px;
+  margin: 0;
 
   &--hero {
     padding: 76px 0 120px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 66%;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .header__title {
+    &--hero {
+      font-size: 43px;
+      padding: 124px 0 371px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: 50% 50%;
+      min-height: 630px;
+    }
+  }
+
+  .header__nav-wrapper {
+    padding: 0 51px;
+
+    min-height: 88px;
+
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
