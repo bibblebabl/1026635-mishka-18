@@ -28,7 +28,7 @@
   flex-direction: column;
 
   justify-content: flex-start;
-  min-width: 400px;
+  min-width: 300px;
 
   &--arrivals-sale {
     display: none;
@@ -41,7 +41,6 @@
   font-size: 17px;
 
   a {
-
     font-weight: $font-weight-bold;
     color: $black;
   }
@@ -154,4 +153,3 @@
     }
   }
 }
-

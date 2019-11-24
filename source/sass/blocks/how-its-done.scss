@@ -1,5 +1,6 @@
 .how-its-done {
-  @include flex-vertical-center;
+  display: flex;
+  flex-direction: column;
 
   margin: 0 30px 58px;
   padding-bottom: 33px;
@@ -28,9 +29,28 @@
 }
 
 .how-its-done__description {
-  padding: 34px 43px 29px 34px;
+  padding: 34px 34px 29px;
 }
 
-.how-its-done__order {
-  width: 192px;
+.how-its-done__button-wrapper {
+  display: flex;
+  padding: 0 34px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .how-its-done__image-wrapper {
+    order: -1;
+  }
+
+  .how-its-done__description {
+    padding: 34px 40px 29px;
+  }
+
+  .how-its-done__button-wrapper {
+    padding: 0 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }
