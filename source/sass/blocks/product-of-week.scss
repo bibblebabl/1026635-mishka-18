@@ -5,15 +5,23 @@
 .product-of-week__title {
   font-size: 25px;
   font-weight: $font-weight-bold;
-  line-height: 1.2;
   color: $black;
 }
 
 .product-of-week__subtitle {
   font-size: 17px;
   font-weight: $font-weight-bold;
-  line-height: 1.18;
   color: $seafoam-blue;
+
+  text-transform: uppercase;
+}
+
+.product-of-week__image {
+  width: 100%;
+}
+
+.product-of-week__pricing {
+  @include flex-vertical-center;
 }
 
 .product-of-week__price {
@@ -26,5 +34,29 @@
   color: $greyish-brown;
   text-align: center;
 
+  margin-top: 20px;
   margin-bottom: 28px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .product-of-week__titles {
+    display: flex;
+    align-items: center;
+    padding-right: 23px;
+  }
+
+  .product-of-week__title {
+    font-size: 43px;
+    flex-grow: 1;
+  }
+
+  .product-of-week__subtitle {
+    width: 70px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
