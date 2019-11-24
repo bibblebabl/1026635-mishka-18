@@ -38,8 +38,11 @@
   margin-bottom: 28px;
 }
 
-
 @media (min-width: $tablet-width) {
+  .product-of-week {
+    padding: 34px 50px 0;
+  }
+
   .product-of-week__titles {
     display: flex;
     align-items: center;
@@ -58,5 +61,4 @@
 }
 
 @media (min-width: $desktop-width) {
-
 }

@@ -14,25 +14,39 @@
   <header class="header header--gray">
 
     <div class="header__nav-wrapper">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-      </a>
-      <nav class="main-nav">
+      <nav class="header__nav main-nav">
+        <a class="main-nav__item main-nav__item--logo header__logo">
+          <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list main-nav__list main-nav__list--catalog-form">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
+        </ul>
+        <ul class="main-nav__list main-nav__list--search-checkout">
+          <li class="main-nav__item">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="main-nav__list main-nav__list--arrivals-sale">
+          <li class="main-nav__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Распродажа</a>
+          </li>
+        </ul>
+        <span class="main-nav__item main-nav__item--free-shipping">
+          Бесплатная доставка по России
+        </span>
+
       </nav>
     </div>
 
@@ -42,7 +56,7 @@
   <main class="main main--catalog">
 
     <section class="products">
-
+      <h2 class="visually-hidden">Список товаров</h2>
       <ul class="products-list">
 
         <li class="products-list__item product-card">
@@ -52,10 +66,10 @@
               alt="Зайчик-попрыгайчик">
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-
-            <small class="product-card__size">Рост 30 см, вес 200 г</small>
-
+            <div class="product-card__text-container">
+              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+              <small class="product-card__size">Рост 30 см, вес 200 г</small>
+            </div>
             <div class="product-card__footer">
               <b class="product-card__price">1 200 руб.</b>
               <a class="product-card__cart" href="#">Добавить в корзину</a>
@@ -71,9 +85,11 @@
               alt="Корзинка для белья">
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__title">Корзинка для белья</h3>
+            <div class="product-card__text-container">
+              <h3 class="product-card__title">Корзинка для белья</h3>
 
-            <small class="product-card__size">Диаметр 15 см, высота 10 см</small>
+              <small class="product-card__size">Диаметр 15 см, высота 10 см</small>
+            </div>
 
             <div class="product-card__footer">
               <b class="product-card__price">690 руб.</b>
@@ -90,10 +106,11 @@
               alt="Большая корзинка для игрушек">
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+            <div class="product-card__text-container">
+              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
 
-            <small class="product-card__size">Диаметр 30 см, высота 30 см</small>
-
+              <small class="product-card__size">Диаметр 30 см, высота 30 см</small>
+            </div>
             <div class="product-card__footer">
               <b class="product-card__price">1 500 руб.</b>
               <a class="product-card__cart" href="#">Добавить в корзину</a>

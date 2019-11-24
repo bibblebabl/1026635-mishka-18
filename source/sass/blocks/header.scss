@@ -23,7 +23,6 @@
 .header__logo {
   // margin: 22px 51px;
   max-height: 79px;
-
 }
 
 .header__title {
@@ -46,9 +45,11 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .header__title {
+    font-size: 43px;
+    padding: 104px 0 90px;
+
     &--hero {
       font-size: 43px;
       padding: 124px 0 371px;
@@ -70,8 +71,11 @@
 
 @media (min-width: $desktop-width) {
   .header__title {
+    font-size: 53px;
+
+    padding: 105px 0 111px;
+
     &--hero {
-      font-size: 43px;
       padding: 124px 0 371px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: 50% 50%;
@@ -79,4 +83,3 @@
     }
   }
 }
-
