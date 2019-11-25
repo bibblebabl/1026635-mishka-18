@@ -72,4 +72,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .how-its-done {
+    padding: 0;
+    margin: 0 50px;
+    flex-direction: row;
+    min-height: 455px;
+  }
+
+  .how-its-done__image-wrapper {
+    min-width: 682px;
+    height: 100%;
+  }
 }
