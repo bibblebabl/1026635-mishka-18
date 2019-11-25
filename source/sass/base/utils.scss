@@ -15,3 +15,21 @@
 
   overflow: hidden;
 }
+
+.image {
+  &--with-player {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 102px;
+      height: 78px;
+
+      @include absolute-center;
+
+      @include fullwidth-centered-background-image;
+
+      background-image: url("../img/icon-play.svg");
+    }
+  }
+}

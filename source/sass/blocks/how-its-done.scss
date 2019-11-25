@@ -17,19 +17,29 @@
 }
 
 .how-its-done__title {
+  display: flex;
+  align-items: center;
+
   font-size: 17px;
   font-weight: $font-weight-bold;
-  line-height: 1.41;
+  position: relative;
 
   color: $black;
 
-  max-width: 126px;
+  width: 100%;
 
-  margin: 29px 0 26px;
+  padding: 29px 34px;
+  margin: 0;
+
+  svg {
+    margin-right: 25px;
+    fill: #63d1bb;
+  }
 }
 
 .how-its-done__description {
-  padding: 34px 34px 29px;
+  padding: 0 34px;
+  margin: 0 0 40px 0;
 }
 
 .how-its-done__button-wrapper {
@@ -39,12 +49,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-its-done__title {
+    padding: 43px 42px 41px;
+
+    font-size: 20px;
+
+    svg {
+      margin-right: 33px;
+    }
+  }
   .how-its-done__image-wrapper {
     order: -1;
   }
 
   .how-its-done__description {
-    padding: 34px 40px 29px;
+    padding: 0 42px;
   }
 
   .how-its-done__button-wrapper {

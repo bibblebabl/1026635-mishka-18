@@ -1,3 +1,25 @@
 .footer {
   background-color: $gray-light;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 30px;
+}
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    padding: 51px 50px 58px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    display: flex;
+  }
 }

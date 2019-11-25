@@ -19,3 +19,18 @@
   text-indent: -9999px;
   white-space: nowrap;
 }
+
+@mixin fullwidth-centered-background-image {
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+@mixin absolute-center {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate3d(-50%, -50%, 0);
+}
