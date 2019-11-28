@@ -1,27 +1,15 @@
 .header {
   background-color: $gray-light;
-
-  &--hero {
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
 }
 
-.header__nav-wrapper {
-  @include flex-vertical-center;
-
-  width: 100%;
-  min-height: 79px;
-
-  position: relative;
-
-  background-color: $white;
+.header__hero-image {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .header__logo {
-  // margin: 22px 51px;
   max-height: 79px;
 }
 
@@ -36,13 +24,6 @@
 
   padding: 76px 0 74px;
   margin: 0;
-
-  &--hero {
-    padding: 76px 0 120px;
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 66%;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,10 +34,11 @@
     &--hero {
       font-size: 43px;
       padding: 124px 0 371px;
-      background-image: url("../img/hero-tablet@1x.jpg");
-      background-position: 50% 50%;
-      min-height: 746px;
     }
+  }
+
+  .header__hero-image {
+    background-image: url("../img/hero-tablet@1x.jpg");
   }
 
   .header__nav-wrapper {
