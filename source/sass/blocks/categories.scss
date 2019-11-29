@@ -1,6 +1,5 @@
 .categories {
   @include reset-list;
-
 }
 
 .categories__item {
@@ -25,11 +24,10 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .categories {
     display: flex;
     padding: 0 51px;
-    margin-top: -104px;
+    // margin-top: -104px;
   }
 }
