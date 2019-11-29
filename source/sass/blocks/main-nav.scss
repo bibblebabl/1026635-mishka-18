@@ -33,9 +33,11 @@
 
   display: flex;
   flex-direction: column;
-
   justify-content: flex-start;
+
   min-width: 300px;
+
+  font-size: 17px;
 
   &--arrivals-sale {
     display: none;
@@ -45,7 +47,6 @@
 .main-nav__item {
   display: flex;
   align-items: center;
-  font-size: 17px;
 
   a {
     font-weight: $font-weight-bold;
@@ -97,14 +98,19 @@
 
     &--catalog-form {
       order: 1;
-      margin-right: auto;
-      flex-basis: 50%;
       justify-content: flex-start;
+      flex-grow: 1;
+
+      font-size: 15px;
     }
   }
 
   .main-nav__item {
     padding: 25px 0;
+
+    &:not(:first-child) {
+      margin-left: 37px;
+    }
 
     &--logo {
       margin-right: auto;
@@ -117,6 +123,7 @@
       order: 3;
       font-size: 15px;
       font-weight: 300;
+      margin-left: 0;
     }
   }
 }

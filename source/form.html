@@ -12,27 +12,39 @@
 <body class="page-form">
   <header class="header header--gray">
 
-    <div class="header__nav-wrapper">
-      <a class="header__logo" href="index.html">
+
+    <div class="main-nav">
+      <a class="main-nav__logo header__logo">
         <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list main-nav__list--catalog-form">
+        <li class="main-nav__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--search-checkout">
+        <li class="main-nav__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--arrivals-sale">
+        <li class="main-nav__item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Распродажа</a>
+        </li>
+      </ul>
+      <span class="main-nav__item main-nav__item--free-shipping">
+        Бесплатная доставка по России
+      </span>
     </div>
 
     <h1 class="header__title">Вязание на заказ</h1>
