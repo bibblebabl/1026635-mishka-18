@@ -72,7 +72,7 @@
     flex-basis: 50%;
     max-width: none;
 
-    padding-right: 80px;
+    padding-right: 14%;
   }
 }
 
@@ -82,5 +82,9 @@
   }
   .features__title {
     font-size: 53px;
+  }
+
+  .features__item {
+    padding-right: 20%;
   }
 }
