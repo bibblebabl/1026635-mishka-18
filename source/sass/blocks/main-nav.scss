@@ -129,35 +129,41 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    &--search-checkout {
+      justify-content: flex-end;
+      flex-basis: 40%;
+      flex-grow: 1;
+    }
+
+    &--catalog-form {
+      justify-content: flex-start;
+      order: -1;
+      flex-grow: 1;
+      flex-basis: 40%;
+
+      font-size: 17px;
+    }
+
+    &--arrivals-sale {
+      display: flex;
+      flex-grow: 1;
+
+      font-size: 15px;
+    }
+  }
+
   .main-nav__item {
     &--logo {
-      margin: 0 auto;
-      flex-basis: 20%;
+      flex-grow: 1;
       justify-content: center;
+      flex-basis: 40%;
     }
 
     &--free-shipping {
       display: flex;
       flex-basis: 50%;
       justify-content: flex-end;
-    }
-  }
-
-  .main-nav__list {
-    &--search-checkout {
-      flex-basis: 40%;
-      justify-content: flex-end;
-    }
-
-    &--catalog-form {
-      order: -1;
-      flex-basis: 40%;
-      justify-content: flex-start;
-    }
-
-    &--arrivals-sale {
-      display: flex;
-      flex-basis: 50%;
     }
   }
 }
