@@ -13,13 +13,20 @@
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
-    padding: 51px 50px 58px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+
+    padding: 51px 50px 58px;
   }
 
   .footer__logo {
     display: flex;
+    flex-grow: 1;
+  }
+
+  .footer__social {
+    flex-basis: 33%;
+    flex-grow: 1;
   }
 }

@@ -1,8 +1,9 @@
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 100%;
-  // max-width: 260px;
 
   font-size: 17px;
   text-decoration: none;
@@ -10,7 +11,7 @@
   text-transform: uppercase;
   font-weight: $font-weight-bold;
 
-  padding: 20px 0;
+  padding: 13px 0;
 
   color: $greyish-brown;
   border: solid 2px $greyish-brown;
