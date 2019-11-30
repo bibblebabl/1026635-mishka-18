@@ -1,0 +1,17 @@
+.video-player {
+  position: relative;
+}
+
+.video-player__button {
+  position: absolute;
+
+  width: 102px;
+  height: 78px;
+  border: none;
+
+  @include absolute-center;
+  @include fullwidth-centered-background-image;
+
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+}

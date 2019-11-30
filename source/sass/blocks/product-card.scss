@@ -1,0 +1,10 @@
+.product-card__image {
+  flex-basis: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__image {
+    min-height: 462px;
+  }
+}

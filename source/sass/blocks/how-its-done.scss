@@ -14,6 +14,8 @@
 
 .how-its-done__image {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .how-its-done__title {
@@ -31,15 +33,19 @@
   padding: 29px 34px;
   margin: 0;
 
-  svg {
-    margin-right: 25px;
-    fill: #63d1bb;
-  }
+  background-image: url("../../img/icon-video.svg");
+  background-size: 32px 32px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .how-its-done__description {
   padding: 0 34px;
   margin: 0 0 40px 0;
+
+  font-size: 15px;
+  line-height: 2;
+  color: $greyish-brown;
 }
 
 .how-its-done__button-wrapper {
@@ -58,6 +64,7 @@
       margin-right: 33px;
     }
   }
+
   .how-its-done__image-wrapper {
     order: -1;
   }
@@ -73,14 +80,34 @@
 
 @media (min-width: $desktop-width) {
   .how-its-done {
-    padding: 0;
+    display: flex;
+    padding: 47px 57px 47px;
     margin: 0 50px;
-    flex-direction: row;
-    min-height: 455px;
+    flex-direction: column;
+
+    padding-left: 65%;
+    position: relative;
+
+    margin-bottom: 105px;
   }
 
   .how-its-done__image-wrapper {
-    min-width: 682px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
     height: 100%;
+    width: 65%;
+  }
+
+  .how-its-done__title {
+    padding: 53px 0 0 0;
+    margin-bottom: 42px;
+    max-width: 148px;
+  }
+
+  .how-its-done__description {
+    padding: 0;
+    margin-bottom: 51px;
   }
 }
