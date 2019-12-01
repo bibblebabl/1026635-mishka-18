@@ -1,9 +1,5 @@
 .features {
-  padding: 34px 30px;
-}
-
-.features__list {
-  @include reset-list;
+  margin: 34px 32px;
 }
 
 .features__title {
@@ -12,4 +8,89 @@
 
   line-height: 1.2;
   color: $black;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__item {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  position: relative;
+
+  padding-top: 50px;
+
+  margin-bottom: 32px;
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+
+  padding-right: 50px;
+
+  &--eco {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--scandinavian {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--local-support {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--packing {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+.features__text {
+  display: inline-block;
+  max-width: 255px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    margin: 34px 50px;
+  }
+
+  .features__title {
+    font-size: 43px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    flex-basis: 50%;
+    max-width: none;
+
+    padding-right: 14%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    margin: 34px 225px;
+  }
+
+  .features__title {
+    font-size: 53px;
+  }
+
+  .features__item {
+    padding-right: 20%;
+  }
 }

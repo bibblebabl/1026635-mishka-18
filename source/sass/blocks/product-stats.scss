@@ -1,0 +1,10 @@
+.product-stats {
+  border-collapse: separate; /* Способ отображения границы */
+  width: 100%; /* Ширина таблицы */
+  border-spacing: 0; /* Расстояние между ячейками */
+
+  td {
+    border-bottom: 1px solid $gray-light;
+    padding: 10px 0;
+  }
+}
