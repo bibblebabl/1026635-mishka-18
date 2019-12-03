@@ -10,6 +10,12 @@
   display: none;
 }
 
+@media (min-width: $desktop-width) {
+  .footer__copyright {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
@@ -17,16 +23,19 @@
     align-items: center;
     flex-direction: row;
 
-    padding: 51px 50px 58px;
+    padding: 30px 50px 32px;
   }
 
   .footer__logo {
     display: flex;
-    flex-grow: 1;
+    flex-basis: 33%;
   }
 
   .footer__social {
     flex-basis: 33%;
-    flex-grow: 1;
+  }
+
+  .footer__copyright {
+    flex-basis: 33%;
   }
 }

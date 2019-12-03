@@ -53,6 +53,12 @@
   vertical-align: text-top;
 }
 
+.contacts__map {
+  iframe {
+    min-height: 457px;
+  }
+}
+
 .contacts__button-wrapper {
   padding: 0 34px;
 }
