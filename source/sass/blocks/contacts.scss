@@ -1,5 +1,10 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 40px;
+
+  position: relative;
 }
 
 .contacts__title {
@@ -25,6 +30,9 @@
 
 .contacts__row {
   margin-bottom: 15px;
+
+  line-height: 2;
+  color: $greyish-brown;
 }
 
 .contacts__text {
@@ -42,9 +50,6 @@
 
 .contacts__text,
 .contacts__value {
-  font-size: 15px;
-  line-height: 2;
-  color: $greyish-brown;
   vertical-align: text-top;
 }
 
@@ -86,4 +91,51 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    min-height: 663px;
+    padding: 152px 51px 105px 224px;
+
+    background-position: 113px 133px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+
+    margin-left: 0;
+    margin-bottom: 64px;
+    padding-left: 0;
+  }
+
+  .contacts__table {
+    margin: 0 0 70px 0;
+  }
+
+  .contacts__row {
+    margin: 0 0 35px 0;
+
+    font-size: 17px;
+    line-height: 1.76;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .contacts__table-body {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    position: absolute;
+
+    right: 51px;
+    top: 71px;
+    bottom: 105px;
+
+    width: 525px;
+  }
+
+  .contacts__write-us {
+    margin: 0;
+  }
 }
