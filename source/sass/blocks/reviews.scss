@@ -70,7 +70,62 @@
   }
 }
 
-.reviews__write {
-  // margin-top: 38px;
-  // margin-bottom: 45px;
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+
+    padding: 86px 51px 53px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 45% 100%;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    font-weight: $font-weight-bold;
+    color: $black;
+    margin: 0 0 65px 0;
+  }
+
+  .reviews__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    right: 71px;
+    bottom: 53px;
+    width: 137px;
+    margin: 0;
+  }
+
+  .reviews__control {
+    border: none;
+    background-color: transparent;
+
+    &:last-child {
+      margin-left: 37px;
+    }
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 80px;
+    right: 52px;
+    width: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-left: 224px;
+    padding-bottom: 107px;
+  }
+
+  .reviews__controls {
+    bottom: 114px;
+  }
 }
