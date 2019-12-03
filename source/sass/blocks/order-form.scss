@@ -1,5 +1,14 @@
 .order-form {
   padding: 0 30px;
+  width: 100%;
+}
+
+.order-form__note {
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: $greyish-brown;
+  margin: 29px 0;
 }
 
 .order-form__fieldset {
@@ -7,16 +16,30 @@
   @include no-margin-no-padding;
 
   border: none;
+
+  width: 100%;
 }
 
 .order-form__legend {
+  display: flex;
+  align-items: center;
+
   font-size: 17px;
   font-weight: $font-weight-bold;
   color: $seafoam-blue;
-
   text-transform: uppercase;
 
-  margin-bottom: 23px;
+  padding: 23px 0;
+
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.order-form__inputs-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__label {
@@ -25,18 +48,16 @@
   color: $black;
 }
 
-
-.order-form__note {
-  font-size: 14px;
-  color: $greyish-brown;
-}
-
 .order-form__textarea {
   max-width: 100%;
   width: 100%;
   min-height: 142px;
 
   padding: 18px 17px;
+
+  font-family: $font-family-default;
+  font-size: 17px;
+  line-height: 1.06;
 
   resize: vertical;
 
