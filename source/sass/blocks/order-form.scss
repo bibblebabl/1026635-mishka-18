@@ -64,9 +64,6 @@
   border: solid 2px $greyish-brown;
   background-color: $white;
 
-  font-size: 17px;
-  line-height: 1.06;
-  text-align: left;
   color: $greyish-brown;
 }
 
@@ -91,30 +88,26 @@
   }
 
   .order-form__input-container {
+    flex-basis: 50%;
+
     &--horizontal {
       display: flex;
       flex-wrap: wrap;
     }
   }
 
-  .order-form__input-container {
-    flex-basis: 50%;
-  }
-
   .order-form__legend {
     position: absolute;
     padding: 0;
-    left: 0;
+
     top: 15px;
+    left: 51px;
+
     width: auto;
   }
 
   .order-form__input {
     min-height: 53px;
-  }
-
-  .order-form__legend {
-    left: 51px;
   }
 
   .order-form__inputs-wrapper {
