@@ -74,3 +74,49 @@
   margin-top: 31px;
   margin-bottom: 55px;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  .order-form__fieldset {
+    flex-direction: row;
+    padding-left: 152px;
+
+    position: relative;
+  }
+
+  .order-form__input-container {
+    &--horizontal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-form__input-container {
+    flex-basis: 50%;
+  }
+
+  .order-form__legend {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    top: 15px;
+    width: auto;
+  }
+
+  .order-form__input {
+    min-height: 53px;
+  }
+
+  .order-form__inputs-wrapper {
+    width: 70%;
+  }
+
+  .order-form__label {
+    display: flex;
+    align-items: center;
+  }
+}
