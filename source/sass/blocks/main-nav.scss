@@ -23,7 +23,7 @@
 
   background: transparent;
   border: 0;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -47,6 +47,8 @@
 .main-nav__item {
   display: flex;
   align-items: center;
+
+  padding: 32px 0 32px 76px;
 
   a {
     font-weight: $font-weight-bold;

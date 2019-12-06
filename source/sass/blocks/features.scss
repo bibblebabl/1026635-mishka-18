@@ -29,6 +29,10 @@
 
   padding-right: 50px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--eco {
     background-image: url("../img/icon-feature-flower.svg");
   }

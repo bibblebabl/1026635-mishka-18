@@ -48,20 +48,18 @@
       </span>
     </div>
 
-    <div class="header__hero-image">
-      <h1 class="header__title header__title--hero">Милые штуки <br />ручной<br />работы для дома</h1>
-
-      <ul class="header__categories categories">
-        <li class="categories__item">
-          <a href="#">Предметы интерьера</a>
-        </li>
-        <li class="categories__item categories__item--dark">
-          <a href="#">Детские игрушки</a>
-        </li>
-      </ul>
+    <div class="header__title-wrapper header__title-wrapper--hero">
+      <h1 class="header__title">Милые штуки <br />ручной<br />работы для дома</h1>
     </div>
 
-
+    <ul class="header__categories categories">
+      <li class="categories__item">
+        <a href="#">Предметы интерьера</a>
+      </li>
+      <li class="categories__item categories__item--dark">
+        <a href="#">Детские игрушки</a>
+      </li>
+    </ul>
   </header>
 
   <main class="main">
@@ -102,10 +100,8 @@
             </td>
           </tr>
         </table>
-        <!-- <div class="product-of-week__image-wrapper"> -->
         <img src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели"
           class="product-of-week__image">
-        <!-- </div> -->
         <span class="product-of-week__price">
           Цена: 990 руб.
         </span>
@@ -135,12 +131,12 @@
         <h2 class="reviews__title">Отзывы</h2>
 
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item--active">
             <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-            <span class="reviews__author">Анастасия Красильникова</span>
+            <p class="reviews__author">Анастасия Красильникова</p>
             <p class="reviews__username"><a href="#">@misssssiskras</a></p>
 
           </li>
@@ -149,7 +145,7 @@
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-            <span class="reviews__author">Анастасия Красильникова</span>
+            <p class="reviews__author">Анастасия Красильникова</p>
             <p class="reviews__username"><a href="#">@misssssiskras</a></p>
 
           </li>
@@ -158,7 +154,7 @@
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-            <span class="reviews__author">Анастасия Красильникова</span>
+            <p class="reviews__author">Анастасия Красильникова</p>
             <p class="reviews__username"><a href="#">@misssssiskras</a></p>
 
           </li>
@@ -175,27 +171,29 @@
       <b class="contacts__title">Контакты</b>
 
       <table class="contacts__table">
-        <tr>
-          <td class="contacts__text">e-mail:</td>
-          <td class="contacts__value">
-            <a class="contacts__link contacts__value--email"
-              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="contacts__text">адрес:</td>
-          <td class="contacts__value">
-            г. Санкт-Петербург,<br />
-            ул. Большая Конюшенная,<br />
-            д. 19/8, офис 101<br />
-          </td>
-        </tr>
+        <tbody class="contacts__table-body">
+          <tr class="contacts__row">
+            <td class="contacts__text">e-mail:</td>
+            <td class="contacts__value">
+              <a class="contacts__link contacts__link--email"
+                href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr class="contacts__row">
+            <td class="contacts__text">адрес:</td>
+            <td class="contacts__value">
+              г. Санкт-Петербург,<br />
+              ул. Большая Конюшенная,<br />
+              д. 19/8, офис 101
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <div class="contacts__map">
         <iframe class="contacts__iframe-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6058505727422!2d30.32335806116341!3d59.93868224659151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1573594915893!5m2!1sru!2sru"
-          width="100%" height="457" style="border:0" allowfullscreen="">
+          width="100%" height="100%" style="border:0" allowfullscreen="">
         </iframe>
       </div>
 

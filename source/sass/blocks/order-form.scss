@@ -1,5 +1,14 @@
 .order-form {
   padding: 0 30px;
+  width: 100%;
+}
+
+.order-form__note {
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: $greyish-brown;
+  margin: 29px 0;
 }
 
 .order-form__fieldset {
@@ -7,28 +16,36 @@
   @include no-margin-no-padding;
 
   border: none;
+
+  width: 100%;
 }
 
 .order-form__legend {
+  display: flex;
+  align-items: center;
+
   font-size: 17px;
   font-weight: $font-weight-bold;
   color: $seafoam-blue;
-
   text-transform: uppercase;
 
-  margin-bottom: 23px;
+  padding: 23px 0;
+
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.order-form__inputs-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__label {
   font-size: 17px;
   font-weight: $font-weight-bold;
   color: $black;
-}
-
-
-.order-form__note {
-  font-size: 14px;
-  color: $greyish-brown;
 }
 
 .order-form__textarea {
@@ -38,18 +55,96 @@
 
   padding: 18px 17px;
 
+  font-family: $font-family-default;
+  font-size: 17px;
+  line-height: 1.06;
+
   resize: vertical;
 
   border: solid 2px $greyish-brown;
   background-color: $white;
 
-  font-size: 17px;
-  line-height: 1.06;
-  text-align: left;
   color: $greyish-brown;
 }
 
 .order-form__submit {
   margin-top: 31px;
   margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding-left: 0;
+    padding-right: 51px;
+  }
+
+  .order-form__fieldset {
+    flex-direction: row;
+    padding-left: 225px;
+
+    position: relative;
+
+    margin-bottom: 50px;
+  }
+
+  .order-form__input-container {
+    flex-basis: 50%;
+
+    &--horizontal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-form__legend {
+    position: absolute;
+    padding: 0;
+
+    top: 15px;
+    left: 51px;
+
+    width: auto;
+  }
+
+  .order-form__input {
+    min-height: 53px;
+  }
+
+  .order-form__inputs-wrapper {
+    width: 70%;
+  }
+
+  .order-form__label {
+    display: flex;
+    align-items: center;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-form__submit {
+    max-width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__note {
+    padding-left: 225px;
+  }
+
+  .order-form__legend {
+    left: 114px;
+  }
+
+  .order-form__input-container {
+    flex-basis: 33%;
+  }
+
+  .order-form__footer {
+    padding-left: 225px;
+  }
 }
