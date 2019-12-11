@@ -1,11 +1,18 @@
 .product-of-week {
-  margin: 34px 32px 0;
+  margin: 29px 32px 0;
+}
+
+.product-of-week__titles {
+  margin-bottom: 25px;
 }
 
 .product-of-week__title {
   font-size: 25px;
   font-weight: $font-weight-bold;
   color: $black;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
 }
 
 .product-of-week__subtitle {
@@ -14,10 +21,13 @@
   color: $seafoam-blue;
 
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .product-of-week__description {
   line-height: 1.76;
+  margin: 0 0 16px 0;
+  padding: 0;
 }
 
 .product-of-week__image {
@@ -38,8 +48,8 @@
   color: $greyish-brown;
   text-align: center;
 
-  margin-top: 20px;
-  margin-bottom: 28px;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {

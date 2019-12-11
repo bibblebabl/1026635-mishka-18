@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 35px 40px 29px;
+  margin: 30px 35px 8px 29px;
   border-collapse: collapse;
 }
 
@@ -29,18 +29,20 @@
 }
 
 .contacts__row {
-  margin-bottom: 15px;
-
+  color: #444444;
+  margin-bottom: 26px;
+  letter-spacing: -0.1px;
   line-height: 2;
-  color: $greyish-brown;
 }
 
 .contacts__text {
   padding-right: 32px;
+  min-width: 78px;
 }
 
 .contacts__link {
   color: $greyish-brown;
+  letter-spacing: 0.6px;
 
   &--email {
     border-bottom: 1px solid #62d1ba;
@@ -65,7 +67,7 @@
 
 .contacts__write-us {
   margin: 39px auto;
-  max-width: 230px;
+  max-width: 260px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,14 +1,15 @@
 .reviews {
-  padding: 27px 31px 45px;
+  padding: 24px 31px 45px;
 }
 
 .reviews__title {
   font-size: 25px;
   font-weight: $font-weight-bold;
-
   line-height: 1.2;
   color: $black;
-  margin: 0 0 38px 0;
+  letter-spacing: 1px;
+
+  margin: 0 0 23px 0;
 }
 
 .reviews__list {
@@ -21,7 +22,8 @@
   font-size: 15px;
   line-height: 2;
   color: $greyish-brown;
-  margin: 0 0 40px 0;
+  margin: 0 0 27px 0;
+  letter-spacing: 0.4px;
 }
 
 .reviews__author {
@@ -29,11 +31,12 @@
   font-weight: $font-weight-bold;
   color: $black;
 
-  margin: 0 0 5px 0;
+  margin: 0 0 11px 0;
 }
 
 .reviews__username {
   margin: 0;
+  letter-spacing: 1.5px;
 
   a {
     color: $greyish-brown;
