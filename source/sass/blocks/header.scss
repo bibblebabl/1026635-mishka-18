@@ -20,7 +20,8 @@
 }
 
 .header__logo {
-  max-height: 79px;
+  // max-height: 79px;
+  height: 100%;
 }
 
 .header__title {
@@ -52,8 +53,12 @@
   .header__title {
     font-size: 43px;
 
+    br {
+      display: none;
+    }
+
     &--hero {
-      padding-bottom: 0;
+      padding: 0 64px;
     }
   }
 

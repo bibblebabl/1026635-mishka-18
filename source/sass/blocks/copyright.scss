@@ -26,3 +26,19 @@
     fill: $seafoam-blue;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-right: 0;
+  }
+
+  .copyright__text {
+    margin-right: 21px;
+  }
+
+  .copyright__link {
+    svg {
+      margin-right: -8px;
+    }
+  }
+}

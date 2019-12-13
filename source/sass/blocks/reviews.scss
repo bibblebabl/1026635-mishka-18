@@ -36,7 +36,7 @@
 
 .reviews__username {
   margin: 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
 
   a {
     color: $greyish-brown;
@@ -77,32 +77,46 @@
   .reviews {
     position: relative;
 
-    padding: 86px 51px 53px;
+    padding: 80px 51px 67px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 50%;
-    background-size: 45% 100%;
+    background-size: 46% 100%;
+
+    margin-bottom: 60px;
   }
 
   .reviews__title {
     font-size: 43px;
     font-weight: $font-weight-bold;
     color: $black;
-    margin: 0 0 65px 0;
+    margin: 0 0 47px 0;
   }
 
   .reviews__description {
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 1.86;
+    letter-spacing: 0.5px;
+    margin: 0 0 54px 0;
+  }
+
+  .reviews__author {
+    letter-spacing: 1px;
+  }
+
+  .reviews__list {
+    margin-bottom: 0;
   }
 
   .reviews__controls {
     position: absolute;
-    right: 71px;
-    bottom: 53px;
+
     width: 137px;
     margin: 0;
+
+    right: 67px;
+    bottom: 63px;
   }
 
   .reviews__control {
@@ -117,7 +131,7 @@
   .reviews__write {
     position: absolute;
     top: 80px;
-    right: 52px;
+    right: 48px;
     width: 175px;
   }
 }

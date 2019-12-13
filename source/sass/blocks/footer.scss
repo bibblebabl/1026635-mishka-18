@@ -10,12 +10,6 @@
   display: none;
 }
 
-@media (min-width: $desktop-width) {
-  .footer__copyright {
-    justify-content: flex-end;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
@@ -23,7 +17,7 @@
     align-items: center;
     flex-direction: row;
 
-    padding: 30px 50px 32px;
+    padding: 40px 50px 32px;
   }
 
   .footer__logo {
@@ -37,5 +31,11 @@
 
   .footer__copyright {
     flex-basis: 33%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__copyright {
+    justify-content: flex-end;
   }
 }

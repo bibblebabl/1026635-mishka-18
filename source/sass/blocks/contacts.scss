@@ -74,8 +74,10 @@
   .contacts {
     background-image: url("../img/icon-flag.svg");
     background-size: 47px 81px;
-    background-position: right 55px top 47px;
+    background-position: right 51px top 58px;
     background-repeat: no-repeat;
+
+    padding-top: 76px;
   }
 
   .contacts__title {
@@ -83,11 +85,27 @@
     font-weight: $font-weight-bold;
     line-height: 1.16;
     color: $black;
-    padding-left: 51px;
+
+    padding-left: 49px;
+    letter-spacing: 0.5px;
   }
 
   .contacts__table {
-    margin: 72px 53px 61px;
+    margin: 46px 53px 31px;
+  }
+
+  .contacts__text {
+    min-width: 75px;
+    letter-spacing: 0.8px;
+    padding-right: 24px;
+  }
+
+  .contacts__value {
+    letter-spacing: 0.9px;
+  }
+
+  .contacts__link {
+    letter-spacing: 1.6px;
   }
 
   .contacts__table-body {
@@ -95,7 +113,14 @@
   }
 
   .contacts__row {
-    margin-right: 55px;
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+
+  .contacts__write-us {
+    margin: 51px auto;
+    max-width: 230px;
   }
 }
 

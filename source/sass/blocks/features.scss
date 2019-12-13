@@ -74,23 +74,34 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin: 34px 50px;
+    margin: 120px 50px 24px;
   }
 
   .features__title {
     font-size: 43px;
+    margin: 0 0 50px 0;
   }
 
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    display: flex;
+    max-height: 480px;
+    width: 100%;
+    flex-flow: column wrap;
   }
 
   .features__item {
     flex-basis: 50%;
-    max-width: none;
+    width: 50%;
+    margin-bottom: 55px;
+    padding-right: 40px;
 
-    padding-right: 14%;
+    font-size: 20px;
+
+    br {
+      display: none;
+    }
   }
 }
 
