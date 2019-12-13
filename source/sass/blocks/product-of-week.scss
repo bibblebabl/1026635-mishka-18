@@ -1,5 +1,5 @@
 .product-of-week {
-  margin: 29px 32px 0;
+  padding: 29px 32px 0;
 }
 
 .product-of-week__titles {
@@ -54,16 +54,22 @@
 
 @media (min-width: $tablet-width) {
   .product-of-week {
-    margin: 48px 50px 0;
+    padding: 48px 50px 0;
 
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 68px;
+
+    @include zigzag-line;
   }
 
   .product-of-week__titles {
     display: flex;
     align-items: center;
     padding-right: 23px;
+
+    margin-bottom: 55px;
   }
 
   .product-of-week__title {
@@ -78,8 +84,7 @@
 
   .product-of-week__description {
     max-width: 282px;
-    margin: 0 0 38px 0;
-    padding-top: 24px;
+    margin: -7px 0 38px 0;
 
     font-size: 17px;
     line-height: 1.76;

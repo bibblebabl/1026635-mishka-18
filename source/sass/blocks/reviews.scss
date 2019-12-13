@@ -77,14 +77,14 @@
   .reviews {
     position: relative;
 
-    padding: 80px 51px 67px;
+    padding: 80px 51px 140px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 46% 100%;
 
-    margin-bottom: 60px;
+    @include zigzag-line;
   }
 
   .reviews__title {
@@ -116,7 +116,7 @@
     margin: 0;
 
     right: 67px;
-    bottom: 63px;
+    bottom: 135px;
   }
 
   .reviews__control {
