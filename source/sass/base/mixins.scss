@@ -41,3 +41,23 @@
   background-size: auto 15px;
   background-repeat: repeat-x;
 }
+
+@mixin zigzag-fill {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+
+    width: 100%;
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+  }
+}

@@ -1,3 +1,7 @@
+.header {
+  @include zigzag-fill;
+}
+
 .header__title-wrapper {
   @include flex-vertical-center;
   justify-content: space-between;
