@@ -112,10 +112,6 @@
     }
   }
 
-  .main-nav__icon {
-    // position: absolute;
-  }
-
   .main-nav__item {
     padding: 25px 0;
     position: relative;
@@ -190,6 +186,23 @@
   }
 
   .main-nav__item {
+    padding: 44px 0;
+
+    &--catalog {
+      padding-right: 37px;
+      margin-right: 0;
+    }
+
+    &--form {
+      padding-left: 37px;
+
+      border-left: 1px solid $gray-dark;
+    }
+
+    &--cart {
+      padding-left: 37px;
+    }
+
     &--logo {
       flex-grow: 1;
       justify-content: center;
