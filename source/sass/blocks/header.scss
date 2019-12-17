@@ -89,5 +89,11 @@
     &--hero {
       padding-bottom: 0;
     }
+
+    br {
+      &:first-child {
+        display: block;
+      }
+    }
   }
 }
