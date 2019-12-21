@@ -20,3 +20,12 @@
     min-width: 66px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-stats {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 84px;
+  }
+}

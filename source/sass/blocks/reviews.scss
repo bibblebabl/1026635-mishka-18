@@ -83,8 +83,6 @@
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 46% 100%;
-
-    @include zigzag-line;
   }
 
   .reviews__title {
@@ -138,12 +136,17 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 224px;
-    padding-bottom: 107px;
-    margin-left: 52px;
+    padding-left: 174px;
+    padding-bottom: 167px;
+    margin-left: 48px;
+    padding-top: 70px;
   }
 
   .reviews__controls {
     bottom: 114px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
   }
 }

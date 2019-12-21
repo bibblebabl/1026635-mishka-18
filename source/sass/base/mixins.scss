@@ -36,14 +36,29 @@
 }
 
 @mixin zigzag-line {
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: 0px 100%;
-  background-size: auto 15px;
-  background-repeat: repeat-x;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -12px;
+    left: -50%;
+
+    width: 200%;
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 50%;
+    background-size: auto 15px;
+    background-repeat: repeat-x;
+  }
 }
 
 @mixin zigzag-fill {
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "";

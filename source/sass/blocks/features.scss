@@ -75,6 +75,8 @@
 @media (min-width: $tablet-width) {
   .features {
     margin: 52px 50px 24px;
+
+    @include zigzag-line;
   }
 
   .features__title {
@@ -107,7 +109,8 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 34px 225px;
+    padding: 66px 169px 35px;
+    margin: 0 50px 0px 50px;
   }
 
   .features__title {
@@ -116,9 +119,12 @@
 
   .features__item {
     padding-right: 20%;
+  }
 
-    // br {
-    //   display: block;
-    // }
+  .features__list {
+  }
+
+  .features__item {
+    padding-right: 0;
   }
 }
