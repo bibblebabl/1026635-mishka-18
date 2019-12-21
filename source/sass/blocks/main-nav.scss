@@ -162,6 +162,9 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
+    height: 100%;
+    max-height: 85px;
+
     &--search-checkout {
       justify-content: flex-end;
       flex-basis: 40%;
@@ -178,6 +181,8 @@
     }
 
     &--arrivals-sale {
+      max-height: 65px;
+
       display: flex;
       flex-grow: 1;
 
@@ -186,8 +191,6 @@
   }
 
   .main-nav__item {
-    padding: 44px 0;
-
     &--catalog {
       padding-right: 37px;
       margin-right: 0;
@@ -200,7 +203,7 @@
     }
 
     &--cart {
-      padding-left: 37px;
+      padding-left: 33px;
     }
 
     &--logo {
@@ -209,10 +212,21 @@
       flex-basis: 40%;
     }
 
+    &--search {
+      padding: 44px 31px;
+    }
+
     &--free-shipping {
       display: flex;
       flex-basis: 50%;
       justify-content: flex-end;
+    }
+
+    &--new-arrivals {
+      padding-right: 30px;
+    }
+    &--sale {
+      padding-left: 30px;
     }
   }
 }

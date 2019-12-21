@@ -92,6 +92,10 @@
 
     br {
       &:first-child {
+        display: none;
+      }
+
+      &:nth-child(2) {
         display: block;
       }
     }
