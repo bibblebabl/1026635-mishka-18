@@ -29,7 +29,8 @@
       </ul>
       <ul class="main-nav__list main-nav__list--search-checkout">
         <li class="main-nav__item main-nav__item--search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewbox="-0.8 -0.8 17.6 17.6">
+          <svg class="main-nav__icon main-nav__icon--search" xmlns="http://www.w3.org/2000/svg" width="17.6"
+            height="17.6" viewbox="-0.8 -0.8 17.6 17.6">
             <path fill="#231F20"
               d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0014.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 001.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1111 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z" />
           </svg>
@@ -231,6 +232,18 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    var mainNavLists = document.querySelectorAll('.main-nav__list');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navToggle.addEventListener('click', function () {
+      mainNavLists.forEach(list => {
+        var isClosed = list.classList.contains('main-nav__list--closed')
+        list.classList.toggle('main-nav__list--closed', !isClosed);
+      })
+    });
+  </script>
 </body>
 
 </html>

@@ -1,23 +1,21 @@
 .header {
-  @include zigzag-fill;
+  width: 100%;
 }
 
 .header__title-wrapper {
   @include flex-vertical-center;
-  justify-content: space-between;
+  justify-content: center;
 
   background-color: $gray-light;
   min-height: 180px;
   text-align: center;
-
-  padding: 73px 0 120px;
 
   &--hero {
     background-color: $gray-light;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    min-height: 285px;
+    min-height: 350px;
     padding-bottom: 0;
     background-size: cover;
   }
@@ -37,14 +35,19 @@
   letter-spacing: 1px;
 
   &--hero {
+    padding-top: 74px;
     padding-bottom: 122px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    @include zigzag-fill;
+  }
+
   .header__title-wrapper {
-    padding-top: 105px;
-    padding-bottom: 99px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 
     &--hero {
       min-height: 746px;
@@ -77,6 +80,9 @@
 
 @media (min-width: $desktop-width) {
   .header__title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     &--hero {
       padding-bottom: 0;
       background-image: url("../img/hero-desktop@1x.jpg");
