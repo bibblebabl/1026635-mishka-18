@@ -1,9 +1,11 @@
 .footer {
-  background-color: $gray-light;
+  width: 100%;
+  padding: 0 30px;
+
   display: flex;
   flex-direction: column;
 
-  padding: 0 30px;
+  background-color: $gray-light;
 }
 
 .footer__logo {
@@ -35,6 +37,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer {
+    padding: 26px 50px 32px;
+  }
+
   .footer__copyright {
     justify-content: flex-end;
   }
