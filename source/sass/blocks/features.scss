@@ -27,7 +27,7 @@
   background-size: 45px 35px;
 
   padding-top: 53px;
-  padding-right: 0px;
+  padding-right: 0;
   margin-bottom: 30px;
 
   &:last-child {
@@ -85,11 +85,10 @@
   }
 
   .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
     max-height: 480px;
     width: 100%;
+
+    display: flex;
     flex-flow: column wrap;
   }
 
@@ -106,7 +105,7 @@
 @media (min-width: $desktop-width) {
   .features {
     padding: 66px 169px 35px;
-    margin: 0 50px 0px 50px;
+    margin: 0 50px 0 50px;
   }
 
   .features__title {
