@@ -60,10 +60,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-its-done {
+    margin: 0 50px 75px;
+  }
+
   .how-its-done__title {
-    padding: 43px 42px 41px;
+    padding: 40px 42px 32px 106px;
 
     font-size: 20px;
+    letter-spacing: 0.6px;
+
+    background-position: 43px 50%;
 
     svg {
       margin-right: 33px;
@@ -71,15 +78,26 @@
   }
 
   .how-its-done__image-wrapper {
+    height: 455px;
+
     order: -1;
   }
 
   .how-its-done__description {
     padding: 0 42px;
+    margin-bottom: 37px;
+
+    font-size: 15px;
+    letter-spacing: 0.5px;
   }
 
   .how-its-done__button-wrapper {
     padding: 0 42px;
+  }
+
+  .how-its-done__order {
+    max-width: none;
+    width: 88%;
   }
 }
 

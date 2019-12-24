@@ -13,21 +13,25 @@
 
   width: 100%;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .products-list {
-    padding: 0 52px;
-    margin-top: 67px;
-    margin-bottom: 53px;
+    margin: 0;
+
+    padding: 80px 49px 3px 51px;
   }
 
   .products-list__item {
     flex-direction: row;
     min-height: 334px;
+
+    margin-bottom: 52px;
   }
 
   .product-card__image-wrapper {
