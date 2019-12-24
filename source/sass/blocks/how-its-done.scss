@@ -103,15 +103,15 @@
 
 @media (min-width: $desktop-width) {
   .how-its-done {
-    display: flex;
-    padding: 47px 57px 47px;
-    margin: 0 50px;
-    flex-direction: column;
-
-    padding-left: 65%;
     position: relative;
 
-    margin-bottom: 105px;
+    padding: 47px 57px 47px 66%;
+    margin: 0 50px 105px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 455px;
   }
 
   .how-its-done__image-wrapper {
@@ -124,13 +124,21 @@
   }
 
   .how-its-done__title {
-    padding: 53px 0 0 0;
-    margin-bottom: 42px;
+    padding: 47px 0 0 0;
+    margin-bottom: 34px;
     max-width: 148px;
+
+    background-position: 3px -10%;
   }
 
   .how-its-done__description {
     padding: 0;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
+
+    line-height: 2;
+  }
+
+  .how-its-done__order {
+    width: 100%;
   }
 }

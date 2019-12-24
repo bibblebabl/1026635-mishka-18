@@ -149,7 +149,7 @@
 
     &--search {
       font-size: 0;
-      padding: 0 31px;
+      padding: 0 38px;
 
       border-left: 1px solid $gray-dark;
     }
@@ -157,7 +157,7 @@
     &--cart {
       border-left: 1px solid $gray-dark;
 
-      padding-left: 29px;
+      padding-left: 82px;
       margin-left: 0;
     }
 
@@ -215,18 +215,10 @@
       border-left: 1px solid $gray-dark;
     }
 
-    &--cart {
-      padding-left: 33px;
-    }
-
     &--logo {
       flex-grow: 1;
       justify-content: center;
       flex-basis: 40%;
-    }
-
-    &--search {
-      padding: 44px 31px;
     }
 
     &--free-shipping {

@@ -96,9 +96,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-card__image-wrapper {
+  .product-card__image {
+    max-height: none;
+    height: 462px;
+    max-width: 100%;
+
     flex-basis: 462px;
-    min-height: 334px;
   }
 
   .product-card__text-container {
@@ -106,12 +109,14 @@
   }
 
   .product-card__title {
-    margin: 0 0 15px 0;
+    margin: 0 0 7px 0;
   }
 
   .product-card__info {
     min-height: 197px;
+  }
 
-    padding-left: 25px;
+  .product-card__footer {
+    padding-left: 0;
   }
 }
