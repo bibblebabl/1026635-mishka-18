@@ -43,6 +43,9 @@
 
 @media (min-width: $tablet-width) {
   .categories {
+    position: absolute;
+    bottom: 0;
+
     display: flex;
     padding: 0 51px;
   }
