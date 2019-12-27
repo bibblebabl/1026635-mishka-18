@@ -26,6 +26,10 @@
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+
+  &--closed {
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }
 
 .main-nav__list {
