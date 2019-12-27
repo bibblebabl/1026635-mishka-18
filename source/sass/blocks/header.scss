@@ -3,20 +3,27 @@
 }
 
 .header__title-wrapper {
+  position: relative;
+  min-height: 180px;
+
   @include flex-vertical-center;
   justify-content: center;
 
-  background-color: $gray-light;
-  min-height: 180px;
   text-align: center;
 
+  background-color: $gray-light;
+
   &--hero {
+    justify-content: flex-start;
+
+    min-height: 490px;
+    padding-top: 73px;
+    padding-bottom: 0;
+
     background-color: $gray-light;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    min-height: 350px;
-    padding-bottom: 0;
     background-size: cover;
   }
 }
@@ -26,17 +33,17 @@
 }
 
 .header__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 27px;
   line-height: 1.11;
   font-weight: $font-weight-bold;
   color: $very-dark-brown;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
 
   &--hero {
-    padding-top: 74px;
-    padding-bottom: 122px;
+    max-width: 270px;
   }
 }
 
@@ -60,12 +67,9 @@
   .header__title {
     font-size: 43px;
 
-    br {
-      display: none;
-    }
-
     &--hero {
       padding: 0 64px;
+      max-width: 660px;
     }
   }
 
@@ -95,6 +99,7 @@
 
     &--hero {
       padding-bottom: 0;
+      max-width: 760px;
     }
 
     br {
