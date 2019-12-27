@@ -12,94 +12,38 @@
   flex-direction: column;
 
   width: 100%;
+
   margin-bottom: 30px;
-}
 
-.product-card__image-wrapper {
-  font-size: 0;
-}
-
-.product-card__image {
-  width: 100%;
-}
-
-.product-card__title {
-  @include no-margin-no-padding;
-
-  font-size: 17px;
-  font-weight: $font-weight-bold;
-
-  margin-bottom: 15px;
-
-  color: $black;
-}
-
-.product-card__info {
-  display: flex;
-  flex-direction: column;
-
-  padding: 12px 32px 30px 28px;
-
-  border: solid 1px $gray-dark;
-}
-
-.product-card__footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: auto;
-}
-
-.product-card__cart {
-  @include fullwidth-centered-background-image;
-
-  width: 21px;
-  height: 18px;
-
-  background-image: url("../img/icon-cart.svg");
-  opacity: 0.2;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .products-list {
-    padding: 0 52px;
-    margin-top: 67px;
-    margin-bottom: 53px;
-  }
+    margin: 0;
 
-  .product-card__title {
-    font-size: 20px;
-    font-weight: $font-weight-bold;
-  }
-
-  .product-card__size {
-    font-size: 15px;
+    padding: 80px 49px 3px 51px;
   }
 
   .products-list__item {
     flex-direction: row;
     min-height: 334px;
-  }
 
-  .product-card__price {
-    font-size: 17px;
-    font-weight: $font-weight-bold;
+    margin-bottom: 52px;
   }
 
   .product-card__image-wrapper {
     flex-basis: 50%;
-  }
-
-  .product-card__info {
-    flex-basis: 50%;
-    padding: 29px 32px 32px 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .products-list {
     padding: 0 50px;
-    margin-top: 111px;
-    margin-bottom: 57px;
+    margin-top: 125px;
+    margin-bottom: 2px;
 
     flex-direction: row;
     justify-content: space-between;
@@ -118,22 +62,5 @@
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  .product-card__image-wrapper {
-    flex-basis: 462px;
-    min-height: 334px;
-  }
-
-  .product-card__text-container {
-    flex-grow: 1;
-  }
-
-  .product-card__title {
-    margin: 0 0 15px 0;
-  }
-
-  .product-card__info {
-    min-height: 197px;
   }
 }

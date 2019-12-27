@@ -18,46 +18,59 @@
 }
 
 .how-its-done__title {
+  position: relative;
+
+  width: 100%;
+  padding: 29px 34px 26px 90px;
+  margin: 0;
+
   display: flex;
   align-items: center;
 
   font-size: 17px;
   font-weight: $font-weight-bold;
-  position: relative;
-
+  line-height: 1.25;
   color: $black;
-
-  width: 100%;
-
-  padding: 29px 34px;
-  margin: 0;
 
   background-image: url("../../img/icon-video.svg");
   background-size: 32px 32px;
-  background-position: 0 0;
+  background-position: 33px 50%;
   background-repeat: no-repeat;
 }
 
 .how-its-done__description {
-  padding: 0 34px;
-  margin: 0 0 40px 0;
+  padding: 24px 50px 0 34px;
+  margin: 0 0 26px 0;
 
-  font-size: 15px;
-  line-height: 2;
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0;
+
   color: $greyish-brown;
 }
 
-.how-its-done__button-wrapper {
-  display: flex;
-  padding: 0 34px;
+.how-its-done__order {
   width: 100%;
+  max-width: 192px;
+  margin: 0 auto;
+
+  display: flex;
+
+  letter-spacing: -0.2px;
 }
 
 @media (min-width: $tablet-width) {
+  .how-its-done {
+    margin: 0 50px 75px;
+  }
+
   .how-its-done__title {
-    padding: 43px 42px 41px;
+    padding: 40px 42px 32px 106px;
 
     font-size: 20px;
+    letter-spacing: 0.6px;
+
+    background-position: 43px 50%;
 
     svg {
       margin-right: 33px;
@@ -65,29 +78,40 @@
   }
 
   .how-its-done__image-wrapper {
+    height: 455px;
+
     order: -1;
   }
 
   .how-its-done__description {
     padding: 0 42px;
+    margin-bottom: 37px;
+
+    font-size: 15px;
+    letter-spacing: 0.5px;
   }
 
   .how-its-done__button-wrapper {
     padding: 0 42px;
   }
+
+  .how-its-done__order {
+    max-width: none;
+    width: 88%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .how-its-done {
-    display: flex;
-    padding: 47px 57px 47px;
-    margin: 0 50px;
-    flex-direction: column;
-
-    padding-left: 65%;
     position: relative;
 
-    margin-bottom: 105px;
+    padding: 47px 57px 47px 66%;
+    margin: 0 50px 105px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 455px;
   }
 
   .how-its-done__image-wrapper {
@@ -100,13 +124,21 @@
   }
 
   .how-its-done__title {
-    padding: 53px 0 0 0;
-    margin-bottom: 42px;
+    padding: 47px 0 0 0;
+    margin-bottom: 34px;
     max-width: 148px;
+
+    background-position: 3px -10%;
   }
 
   .how-its-done__description {
     padding: 0;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
+
+    line-height: 2;
+  }
+
+  .how-its-done__order {
+    width: 100%;
   }
 }

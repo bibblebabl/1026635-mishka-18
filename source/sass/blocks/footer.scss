@@ -1,19 +1,15 @@
 .footer {
-  background-color: $gray-light;
+  width: 100%;
+  padding: 0 30px;
+
   display: flex;
   flex-direction: column;
 
-  padding: 0 30px;
+  background-color: $gray-light;
 }
 
 .footer__logo {
   display: none;
-}
-
-@media (min-width: $desktop-width) {
-  .footer__copyright {
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +19,7 @@
     align-items: center;
     flex-direction: row;
 
-    padding: 30px 50px 32px;
+    padding: 33px 50px 32px;
   }
 
   .footer__logo {
@@ -37,5 +33,15 @@
 
   .footer__copyright {
     flex-basis: 33%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 32px 50px 32px;
+  }
+
+  .footer__copyright {
+    justify-content: flex-end;
   }
 }

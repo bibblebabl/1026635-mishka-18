@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 35px 40px 29px;
+  margin: 30px 35px 8px 29px;
   border-collapse: collapse;
 }
 
@@ -29,18 +29,20 @@
 }
 
 .contacts__row {
-  margin-bottom: 15px;
-
+  color: #444444;
+  margin-bottom: 26px;
+  letter-spacing: -0.1px;
   line-height: 2;
-  color: $greyish-brown;
 }
 
 .contacts__text {
   padding-right: 32px;
+  min-width: 78px;
 }
 
 .contacts__link {
   color: $greyish-brown;
+  letter-spacing: 0.6px;
 
   &--email {
     border-bottom: 1px solid #62d1ba;
@@ -65,15 +67,19 @@
 
 .contacts__write-us {
   margin: 39px auto;
-  max-width: 230px;
+  max-width: 260px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     background-image: url("../img/icon-flag.svg");
     background-size: 47px 81px;
-    background-position: right 55px top 47px;
+    background-position: right 51px top 45px;
     background-repeat: no-repeat;
+
+    padding-top: 62px;
+
+    @include zigzag-line;
   }
 
   .contacts__title {
@@ -81,11 +87,27 @@
     font-weight: $font-weight-bold;
     line-height: 1.16;
     color: $black;
-    padding-left: 51px;
+
+    padding-left: 49px;
+    letter-spacing: 0.5px;
   }
 
   .contacts__table {
-    margin: 72px 53px 61px;
+    margin: 46px 53px 31px;
+  }
+
+  .contacts__text {
+    min-width: 75px;
+    letter-spacing: 0.8px;
+    padding-right: 24px;
+  }
+
+  .contacts__value {
+    letter-spacing: 0.9px;
+  }
+
+  .contacts__link {
+    letter-spacing: 1.6px;
   }
 
   .contacts__table-body {
@@ -93,32 +115,50 @@
   }
 
   .contacts__row {
-    margin-right: 55px;
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+
+  .contacts__write-us {
+    margin: 51px auto;
+    max-width: 230px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     min-height: 663px;
-    padding: 152px 51px 105px 224px;
-
-    background-position: 113px 133px;
+    padding: 167px 51px 105px 225px;
+    background-position: 112px 157px;
   }
 
   .contacts__title {
     font-size: 53px;
 
     margin-left: 0;
-    margin-bottom: 64px;
+    margin-bottom: 44px;
     padding-left: 0;
   }
 
   .contacts__table {
-    margin: 0 0 70px 0;
+    margin: 0 0 80px 0;
+  }
+
+  .contacts__link {
+    letter-spacing: 0.6px;
+  }
+
+  .contacts__text {
+    padding-right: 19px;
+  }
+
+  .contacts__value {
+    letter-spacing: 0;
   }
 
   .contacts__row {
-    margin: 0 0 35px 0;
+    margin: 0 0 30px 0;
 
     font-size: 17px;
     line-height: 1.76;
@@ -136,9 +176,8 @@
     position: absolute;
 
     right: 51px;
-    top: 71px;
+    top: 96px;
     bottom: 105px;
-
     width: 525px;
   }
 

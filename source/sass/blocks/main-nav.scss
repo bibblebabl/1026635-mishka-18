@@ -13,8 +13,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 10px;
-  top: 16px;
+  top: 14px;
+  right: 15px;
 
   width: 50px;
   height: 50px;
@@ -26,6 +26,10 @@
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+
+  &--closed {
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }
 
 .main-nav__list {
@@ -36,19 +40,26 @@
   justify-content: flex-start;
 
   min-width: 300px;
+  height: 100%;
 
   font-size: 17px;
 
   &--arrivals-sale {
     display: none;
   }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__item {
+  position: relative;
+
   display: flex;
   align-items: center;
 
-  padding: 32px 0 32px 76px;
+  padding: 28px 0 28px 76px;
 
   a {
     font-weight: $font-weight-bold;
@@ -66,7 +77,16 @@
 
   &--free-shipping {
     display: none;
+
+    letter-spacing: 0.6px;
   }
+}
+
+.main-nav__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -104,15 +124,15 @@
       flex-grow: 1;
 
       font-size: 15px;
+
+      max-height: 60px;
     }
   }
 
   .main-nav__item {
     padding: 25px 0;
-
-    &:not(:first-child) {
-      margin-left: 37px;
-    }
+    position: relative;
+    letter-spacing: 0.3px;
 
     &--logo {
       margin-right: auto;
@@ -123,15 +143,45 @@
     &--free-shipping {
       display: flex;
       order: 3;
+
+      margin-left: 0;
+      max-height: 60px;
+
       font-size: 15px;
       font-weight: 300;
+    }
+
+    &--search {
+      font-size: 0;
+      padding: 0 38px;
+
+      border-left: 1px solid $gray-dark;
+    }
+
+    &--cart {
+      border-left: 1px solid $gray-dark;
+
+      padding-left: 82px;
       margin-left: 0;
+    }
+
+    &--catalog {
+      margin-right: 37px;
+    }
+  }
+
+  .main-nav__icon {
+    &--cart {
+      margin-right: 30px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
+    height: 100%;
+    max-height: 85px;
+
     &--search-checkout {
       justify-content: flex-end;
       flex-basis: 40%;
@@ -148,6 +198,8 @@
     }
 
     &--arrivals-sale {
+      max-height: 65px;
+
       display: flex;
       flex-grow: 1;
 
@@ -156,6 +208,17 @@
   }
 
   .main-nav__item {
+    &--catalog {
+      padding-right: 37px;
+      margin-right: 0;
+    }
+
+    &--form {
+      padding-left: 37px;
+
+      border-left: 1px solid $gray-dark;
+    }
+
     &--logo {
       flex-grow: 1;
       justify-content: center;
@@ -166,6 +229,14 @@
       display: flex;
       flex-basis: 50%;
       justify-content: flex-end;
+    }
+
+    &--new-arrivals {
+      padding-right: 30px;
+    }
+
+    &--sale {
+      padding-left: 30px;
     }
   }
 }

@@ -1,10 +1,31 @@
 .product-stats {
-  border-collapse: separate; /* Способ отображения границы */
-  width: 100%; /* Ширина таблицы */
-  border-spacing: 0; /* Расстояние между ячейками */
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0;
+
+  margin-bottom: 32px;
 
   td {
     border-bottom: 1px solid $gray-light;
-    padding: 10px 0;
+    padding: 11px 0 10px 2px;
+  }
+}
+
+.product-stats__title {
+  min-width: 79px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-stats__title {
+    min-width: 66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-stats {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 84px;
   }
 }

@@ -1,11 +1,18 @@
 .product-of-week {
-  margin: 34px 32px 0;
+  padding: 29px 32px 0;
+}
+
+.product-of-week__titles {
+  margin-bottom: 25px;
 }
 
 .product-of-week__title {
   font-size: 25px;
   font-weight: $font-weight-bold;
   color: $black;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
 }
 
 .product-of-week__subtitle {
@@ -14,10 +21,13 @@
   color: $seafoam-blue;
 
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .product-of-week__description {
   line-height: 1.76;
+  margin: 0 0 16px 0;
+  padding: 0;
 }
 
 .product-of-week__image {
@@ -38,22 +48,26 @@
   color: $greyish-brown;
   text-align: center;
 
-  margin-top: 20px;
-  margin-bottom: 28px;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .product-of-week {
-    margin: 34px 50px 0;
+    padding: 48px 50px 0;
 
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 68px;
   }
 
   .product-of-week__titles {
     display: flex;
     align-items: center;
     padding-right: 23px;
+
+    margin-bottom: 55px;
   }
 
   .product-of-week__title {
@@ -68,7 +82,11 @@
 
   .product-of-week__description {
     max-width: 282px;
-    margin: 0 0 54px 0;
+    margin: -7px 0 38px 0;
+
+    font-size: 17px;
+    line-height: 1.76;
+    letter-spacing: 0.6px;
   }
 
   .product-of-week__content-wrapper {
@@ -98,27 +116,49 @@
     font-size: 20px;
     font-weight: $font-weight-bold;
     color: $greyish-brown;
+
+    margin-bottom: 31px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-of-week {
-    margin: 54px 50px 73px 225px;
+    margin: 75px 51px 83px 172px;
     position: relative;
+    padding-bottom: 0;
   }
 
   .product-of-week__titles {
     position: relative;
     z-index: 2;
+
+    margin-bottom: 50px;
+  }
+
+  .product-of-week__title {
+    max-width: 515px;
+    font-size: 53px;
+    line-height: 1.08;
   }
 
   .product-of-week__subtitle {
     position: absolute;
 
-    left: -130px;
+    left: -125px;
+    top: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .product-of-week__description {
+    margin: 0 0 53px 0;
+  }
+
+  .product-of-week__image {
+    width: 57%;
   }
 
   .product-of-week__content-wrapper {
     position: static;
+    padding-right: calc(59% + 44px);
   }
 }
