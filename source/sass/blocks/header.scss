@@ -1,10 +1,11 @@
 .header {
   width: 100%;
+  min-height: 260px;
 }
 
 .header__title-wrapper {
   position: relative;
-  min-height: 180px;
+  min-height: 173px;
 
   @include flex-vertical-center;
   justify-content: center;
