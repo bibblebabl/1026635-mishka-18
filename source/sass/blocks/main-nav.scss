@@ -23,12 +23,12 @@
 
   background: transparent;
   border: 0;
-  background-image: url("../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 
-  &--closed {
-    background-image: url("../img/icon-menu-close.svg");
+  &--open {
+    background-image: url("../img/icon-menu-open.svg");
   }
 }
 
