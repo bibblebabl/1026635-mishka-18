@@ -113,6 +113,10 @@
   .main-nav__list {
     flex-direction: row;
 
+    &--closed {
+      display: flex;
+    }
+
     &--search-checkout {
       flex-basis: 65%;
       justify-content: flex-end;

@@ -14,6 +14,8 @@
 }
 
 .order-form__fieldset {
+  width: 100%;
+
   @include flex-vertical-center;
   @include no-margin-no-padding;
 
@@ -57,6 +59,11 @@
 .order-form__input-group {
   display: flex;
   flex-direction: column;
+
+  &--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .order-form__inputs-wrapper {
@@ -127,17 +134,7 @@
   }
 
   &:checked + .order-form__radio:after {
-    position: absolute;
-    content: "";
-
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-
-    width: 16px;
-    height: 16px;
-    background-color: #62d1ba;
-    border-radius: 50%;
+    display: block;
   }
 
   &:checked + .order-form__checkbox {
@@ -173,6 +170,22 @@
   background-color: transparent;
   border-radius: 50%;
   border: solid 2px $greyish-brown;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    display: none;
+
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 16px;
+    height: 16px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+  }
 }
 
 .order-form__checkbox {
@@ -226,20 +239,44 @@
 @media (min-width: $tablet-width) {
   .order-form {
     padding-left: 0;
-    padding-right: 51px;
+    padding-right: 0;
+  }
+
+  .order-form__note {
+    margin: 71px 0 14px;
+    padding: 0 51px;
+
+    font-size: 17px;
+    line-height: 1.76;
+    text-align: left;
+    color: $greyish-brown;
   }
 
   .order-form__fieldset {
-    flex-direction: row;
-    padding-left: 225px;
-
     position: relative;
 
-    margin-bottom: 50px;
+    padding-left: 217px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+
+    flex-direction: row;
+
+    &--gray {
+      background-color: $gray-light;
+    }
+
+    &--type {
+      margin-bottom: 7px;
+    }
   }
 
   .order-form__label {
     flex-basis: 50%;
+
+    padding-top: 0;
+    padding-left: 81px;
+    margin-bottom: 36px;
 
     &--horizontal {
       display: flex;
@@ -251,7 +288,7 @@
     position: absolute;
     padding: 0;
 
-    top: 15px;
+    top: 60px;
     left: 51px;
 
     width: auto;
@@ -261,6 +298,23 @@
     min-height: 53px;
   }
 
+  .order-form__radio {
+    width: 54px;
+    height: 52px;
+
+    &::after {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .order-form__checkbox {
+    width: 53px;
+    height: 53px;
+
+    background-size: 33px 22px;
+  }
+
   .order-form__inputs-wrapper {
     width: 70%;
   }
@@ -268,6 +322,22 @@
   .order-form__label {
     display: flex;
     align-items: center;
+
+    letter-spacing: 1.2px;
+
+    &--checkbox {
+      min-height: 52px;
+      max-width: 262px;
+    }
+
+    &--checkbox {
+      margin-bottom: 24px;
+
+      &:last-child,
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .order-form__footer {
