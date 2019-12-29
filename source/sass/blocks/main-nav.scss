@@ -113,16 +113,15 @@
   .main-nav__list {
     flex-direction: row;
 
-    &--closed {
-      display: flex;
-    }
-
     &--search-checkout {
+      display: flex;
+
       flex-basis: 65%;
       justify-content: flex-end;
     }
 
     &--catalog-form {
+      display: flex;
       order: 1;
       justify-content: flex-start;
       flex-grow: 1;
