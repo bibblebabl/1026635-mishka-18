@@ -402,18 +402,55 @@
 
 @media (min-width: $desktop-width) {
   .order-form__note {
+    max-width: 960px;
+
     padding-left: 225px;
+    margin-top: 120px;
+  }
+
+  .order-form__fieldset {
+    padding-left: 224px;
   }
 
   .order-form__legend {
     left: 114px;
   }
 
+  .order-form__wrapper {
+    &--with-right-padding {
+      padding-right: 225px;
+    }
+  }
+
   .order-form__label {
     flex-basis: 33%;
+
+    &--checkbox {
+      max-width: 264px;
+      min-height: 50px;
+
+      &:last-child,
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-form__input {
+    &--checkbox {
+      width: 54px;
+      height: 52px;
+    }
+  }
+
+  .order-form__input-icon {
+    right: 5px;
   }
 
   .order-form__footer {
+    margin-top: -4px;
     padding-left: 225px;
+    padding-right: 225px;
   }
 }
