@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+
   min-height: 260px;
 }
 
@@ -86,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .header__title-wrapper {
-    padding-top: 100px;
+    padding-top: 155px;
     padding-bottom: 100px;
 
     &--hero {

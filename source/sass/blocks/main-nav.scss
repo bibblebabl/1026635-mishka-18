@@ -1,4 +1,7 @@
 .main-nav {
+  position: relative;
+  z-index: 1;
+
   width: 100%;
 }
 
@@ -132,7 +135,7 @@
     }
 
     &--arrivals-sale {
-      display: flex;
+      display: none;
     }
   }
 
@@ -220,10 +223,18 @@
       margin-right: 0;
     }
 
+    &--cart {
+      padding-left: 79px;
+    }
+
     &--form {
       padding-left: 37px;
 
       border-left: 1px solid $gray-dark;
+    }
+
+    &--catalog {
+      padding-right: 29px;
     }
 
     &--logo {
