@@ -219,7 +219,7 @@
 
   .main-nav__item {
     &--catalog {
-      padding-right: 37px;
+      padding-right: 29px;
       margin-right: 0;
     }
 
@@ -231,10 +231,6 @@
       padding-left: 37px;
 
       border-left: 1px solid $gray-dark;
-    }
-
-    &--catalog {
-      padding-right: 29px;
     }
 
     &--logo {
