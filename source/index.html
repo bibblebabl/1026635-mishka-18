@@ -59,7 +59,7 @@
     </div>
 
     <div class="header__title-wrapper header__title-wrapper--hero">
-      <h1 class="header__title header__title--hero">Милые штуки ручной <br/>работы&nbsp;для дома</h1>
+      <h1 class="header__title header__title--hero">Милые штуки ручной <br />работы&nbsp;для дома</h1>
       <ul class="header__categories categories">
         <li class="categories__item categories__item--interior">
           <a href="#">Предметы интерьера</a>
@@ -232,19 +232,7 @@
       </a>
     </div>
   </footer>
-
-  <script>
-    var mainNavLists = document.querySelectorAll('.main-nav__list');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navToggle.addEventListener('click', function () {
-      mainNavLists.forEach(list => {
-        var isClosed = list.classList.contains('main-nav__list--closed')
-        list.classList.toggle('main-nav__list--closed', !isClosed);
-        navToggle.classList.toggle('main-nav__toggle--closed', !isClosed);
-      })
-    });
-  </script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
