@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>document.createElement("picture");</script>
+  <script src="js/picturefill.js" async></script>
 
   <title>HTML Academy: Мишка - Каталог товаров</title>
 </head>
@@ -13,7 +17,11 @@
   <header class="header header--gray">
     <div class="main-nav">
       <a class="main-nav__logo header__logo" href="/">
-        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list main-nav__list--catalog-form">
@@ -68,9 +76,12 @@
 
         <li class="products-list__item product-card">
 
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
 
-          <img class="product-card__image" width="260" height="195" src="./img/photo-hare-mobile@1x.jpg"
-            alt="Зайчик-попрыгайчик">
           <div class="product-card__info">
             <div class="product-card__text-container">
               <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
@@ -80,15 +91,16 @@
               <b class="product-card__price">1 200 руб.</b>
               <a class="product-card__cart" aria-label="Добавить в корзину" href="#"></a>
             </div>
+          </div>
         </li>
-        </div>
-
 
         <li class="products-list__item product-card">
 
-
-          <img class="product-card__image" width="260" height="195" src="./img/photo-bowl-mobile@1x.jpg"
-            alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+          </picture>
           <div class="product-card__info">
             <div class="product-card__text-container">
               <h3 class="product-card__title">Корзинка для белья</h3>
@@ -105,14 +117,15 @@
         </li>
 
         <li class="products-list__item product-card">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+          </picture>
 
-
-          <img class="product-card__image" width="260" height="195" src="./img/photo-toys-mobile@1x.jpg"
-            alt="Большая корзинка для игрушек">
           <div class="product-card__info">
             <div class="product-card__text-container">
               <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-
               <small class="product-card__size">Диаметр 30 см, высота 30 см</small>
             </div>
             <div class="product-card__footer">
@@ -120,9 +133,7 @@
               <a class="product-card__cart" aria-label="Добавить в корзину" href="#"></a>
             </div>
           </div>
-
         </li>
-
       </ul>
     </section>
 
@@ -131,9 +142,13 @@
         Процесс производства</h2>
 
       <div class="how-its-done__image-wrapper video-player">
-        <img class="how-its-done__image" width="260" src="./img/video-mobile@1x.jpg" alt="Процесс производства">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="how-its-done__image" width="260" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+        </picture>
 
-        <button type='button' class="video-player__button" aria-label="Включить видео"></button>
+        <button type="button" class="video-player__button" aria-label="Включить видео"></button>
       </div>
 
       <p class="how-its-done__description">
@@ -147,7 +162,7 @@
 
   <footer class="footer">
     <a class="footer__logo">
-      <img class="footer__logo-image" src="./img/logo-footer.svg" width="102" height="34" alt="Мишка">
+      <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__social social">
       <ul class="social__list">
@@ -173,7 +188,7 @@
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" viewBox="0 0 60 60">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" viewbox="0 0 60 60">
           <path
             d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
         </svg>
@@ -181,7 +196,7 @@
       </a>
     </div>
   </footer>
-  <script src="./js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,10 @@
   <title>HTML Academy: Мишка</title>
 
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>document.createElement("picture");</script>
+  <script src="js/picturefill.js" async></script>
+
 </head>
 
 <body class="page-index">
@@ -16,9 +20,15 @@
 
     <div class="main-nav">
       <a class="main-nav__logo header__logo">
-        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </picture>
       </a>
+
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+
       <ul class="main-nav__list main-nav__list--catalog-form">
         <li class="main-nav__item main-nav__item--catalog">
           <a href="catalog.html">Каталог товаров</a>
@@ -97,8 +107,12 @@
             <td class="product-stats__value">15 см</td>
           </tr>
         </table>
-        <img src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели"
-          class="product-of-week__image">
+
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="product-of-week__image" src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели">
+        </picture>
         <span class="product-of-week__price">Цена: 990 руб.</span>
         <a class="product-of-week__buy button" href="form.html">Заказать</a>
       </div>
