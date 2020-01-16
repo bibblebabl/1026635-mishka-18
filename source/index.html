@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="./css/style.css">
 
   <script>document.createElement("picture");</script>
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js" async></script>
 
 </head>
 
@@ -109,9 +110,15 @@
         </table>
 
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 1440px)"
+            srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source media="(min-width: 1440px)"
+            srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="product-of-week__image" src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Товар недели">
+          <img class="product-of-week__image" src="./img/triple-set-mobile@1x.jpg" width="260px" height="315px"
+            alt="Товар недели">
         </picture>
         <span class="product-of-week__price">Цена: 990 руб.</span>
         <a class="product-of-week__buy button" href="form.html">Заказать</a>
@@ -247,6 +254,8 @@
     </div>
   </footer>
   <script src="./js/menu.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>
