@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="./css/style.css">
+
   <script>document.createElement("picture");</script>
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
+
   <title>HTML Academy: Мишка - Каталог товаров</title>
 </head>
 
@@ -74,9 +77,16 @@
         <li class="products-list__item product-card">
 
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-            <img class="product-card__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg"
+              alt="Зайчик-попрыгайчик">
           </picture>
 
           <div class="product-card__info">
@@ -94,9 +104,16 @@
         <li class="products-list__item product-card">
 
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-            <img class="product-card__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg"
+              alt="Корзинка для белья">
           </picture>
           <div class="product-card__info">
             <div class="product-card__text-container">
@@ -115,9 +132,16 @@
 
         <li class="products-list__item product-card">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-            <img class="product-card__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="product-card__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg"
+              alt="Большая корзинка для игрушек">
           </picture>
 
           <div class="product-card__info">
@@ -140,6 +164,8 @@
 
       <div class="how-its-done__image-wrapper video-player">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="how-its-done__image" width="260" src="img/video-mobile@1x.jpg" alt="Процесс производства">
@@ -194,6 +220,8 @@
     </div>
   </footer>
   <script src="js/menu.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>
