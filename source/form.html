@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="./css/style.css">
+
   <script>document.createElement("picture");</script>
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
+
   <title>HTML Academy: Мишка - Вязание на заказ</title>
 </head>
 
@@ -16,9 +19,9 @@
 
     <div class="main-nav">
 
-      <a class="main-nav__logo header__logo">
+      <a class="main-nav__logo header__logo" href="/">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </picture>
@@ -226,51 +229,52 @@
         </button>
 
       </div>
-
-
     </form>
-
-
   </main>
-
 
   <footer class="footer">
     <a class="footer__logo">
-      <img class="footer__logo-image" src="./img/logo-footer.svg" width="102" height="34" alt="Мишка">
+      <svg class="footer__logo-image" width="102" height="34" aria-label="Мишка">
+        <use xlink:href="img/sprite.svg#logo-footer"></use>
+      </svg>
     </a>
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" aria-label="Инстаграм"
-            href="https://www.instagram.com/htmlacademy">
-            <img src="img/icon-insta.svg" alt="Вконтакте" width="22" height="21">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <svg width="22" height="21" aria-label="Мы в Инстаграме">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" aria-label="Фейсбук"
-            href="https://www.facebook.com/htmlacademy">
-            <img src="img/icon-fb.svg" alt="Фейсбук" width="15" height="28">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <svg width="15" height="28" aria-label="Мы в Фейсбуке">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" aria-label="Твиттер" href="https://twitter.com/htmlacademy">
-            <img src="img/icon-twitter.svg" alt="Твиттер" width="23" height="20">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+            <svg width="23" height="20" aria-label="Мы в Твиттере">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#63d1bb" viewBox="0 0 60 60" width="27px" height="34px">
-          <path
-            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="34" aria-label="HTML Academy" fill="#63d1bb">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
-
       </a>
     </div>
   </footer>
   <script src="./js/menu.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>
