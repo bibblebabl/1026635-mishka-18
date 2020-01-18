@@ -16,6 +16,8 @@ var svgstore = require("gulp-svgstore");
 var del = require("del");
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -104,6 +106,9 @@ gulp.task("refresh", function (done) {
 
 gulp.task("js", function() {
   return gulp.src("source/js/script.js")
+      .pipe(babel({
+        presets: ['@babel/env']
+      }))
       .pipe(uglify())
       .pipe(rename("script.min.js"))
       .pipe(gulp.dest('build/js'))

@@ -103,10 +103,17 @@
   }
 
   .main-nav__logo {
+    width: auto;
+    min-width: 149px;
+    padding: 0;
+
+    align-items: center;
     justify-content: flex-start;
 
-    width: auto;
-    flex-grow: 1;
+    img {
+      width: 112px;
+      height: 46px;
+    }
   }
 
   .main-nav__toggle {
@@ -188,6 +195,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__logo {
+    justify-content: center;
+
+    img {
+      width: 149px;
+      height: 72px;
+    }
+  }
+
   .main-nav__list {
     height: 100%;
     max-height: 85px;
