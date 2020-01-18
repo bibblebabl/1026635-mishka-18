@@ -67,6 +67,14 @@
   a {
     font-weight: $font-weight-bold;
     color: $black;
+
+    &:hover {
+      color: $black-lighen;
+    }
+
+    &:active {
+      color: $black-very-lighen;
+    }
   }
 
   &--logo {
