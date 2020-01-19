@@ -20,7 +20,7 @@
   letter-spacing: 1px;
 
   background-color: $seafoam-blue;
-  transition: all 0.3s ease-in-out;
+  transition: $basic-all-transition;
 
   a {
     display: inline-block;
