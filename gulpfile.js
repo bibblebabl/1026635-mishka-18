@@ -35,16 +35,16 @@ gulp.task("css", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png, jpg}")
-    .pipe(webp({quality: 90}))
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png, jpg, svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
@@ -68,7 +68,7 @@ gulp.task("copy", function () {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("html", function () {
@@ -77,11 +77,11 @@ gulp.task("html", function () {
   ], {
     base: "source"
   })
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest("build"));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function() {
+gulp.task("clean", function () {
   return del("build");
 });
 
@@ -97,6 +97,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/script.js", gulp.series("js", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -104,14 +105,14 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp.src("source/js/script.js")
-      .pipe(babel({
-        presets: ['@babel/env']
-      }))
-      .pipe(uglify())
-      .pipe(rename("script.min.js"))
-      .pipe(gulp.dest('build/js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest('build/js'))
 });
 
 gulp.task("build", gulp.series(

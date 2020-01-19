@@ -156,23 +156,25 @@
 
         <fieldset class="order-form__fieldset order-form__fieldset--fio">
           <legend class="order-form__legend">ФИО</legend>
-          <label class="order-form__label order-form__label--text">
-            Имя:
-            <input class="order-form__input order-form__input--text order-form__input--fio"
-              placeholder="Введите ваше имя*" type="text" name="name">
-          </label>
-          <label class="order-form__label order-form__label--text">
-            Фамилия:
-            <input class="order-form__input order-form__input--text order-form__input--fio"
-              placeholder="Укажите фамилию*" type="text" name="surname">
-          </label>
-          <label class="order-form__label order-form__label--text">
-            Отчество:
-            <input class="order-form__input order-form__input--text order-form__input--fio"
-              placeholder="Отчество, если желаете" type="text" name="patronymic">
-          </label>
-        </fieldset>
 
+          <div class="order-form__input-group">
+            <label class="order-form__label order-form__label--text">
+              Имя:
+              <input class="order-form__input order-form__input--text order-form__input--fio"
+                placeholder="Введите ваше имя*" type="text" name="name">
+            </label>
+            <label class="order-form__label order-form__label--text">
+              Фамилия:
+              <input class="order-form__input order-form__input--text order-form__input--fio"
+                placeholder="Укажите фамилию*" type="text" name="surname">
+            </label>
+            <label class="order-form__label order-form__label--text">
+              Отчество:
+              <input class="order-form__input order-form__input--text order-form__input--fio"
+                placeholder="Отчество, если желаете" type="text" name="patronymic">
+            </label>
+        </fieldset>
+      </div>
       </div>
 
       <div
@@ -204,12 +206,11 @@
         </fieldset>
       </div>
 
-
       <div
         class="order-form__wrapper order-form__wrapper--with-vertical-padding order-form__wrapper--with-right-padding">
-        <fieldset class="order-form__fieldset order-form__fieldset--small-margin">
-          <div class="order-form__input-container">
-            <legend class="order-form__legend">Доп</legend>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend order-form__legend--small-margin">Доп</legend>
+          <div class="order-form__input-wrapper">
             <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"
               name="comment"></textarea>
           </div>
@@ -269,7 +270,7 @@
       </a>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="js/script.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </body>
