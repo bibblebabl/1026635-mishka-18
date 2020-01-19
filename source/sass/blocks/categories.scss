@@ -8,11 +8,10 @@
 }
 
 .categories__item {
+  position: relative;
+
   width: 100%;
-
   padding: 29px 0 29px 29px;
-
-  background-color: $seafoam-blue;
 
   font-size: 19px;
   font-weight: $font-weight-bold;
@@ -20,8 +19,8 @@
   text-align: left;
   letter-spacing: 1px;
 
-  background-position: top 50% right 27px;
-  background-repeat: no-repeat;
+  background-color: $seafoam-blue;
+  transition: all 0.3s ease-in-out;
 
   a {
     display: inline-block;
@@ -31,16 +30,65 @@
 
   &--dark {
     background-color: $greeny-blue;
+
+    &:hover {
+      background-color: $aqua-marine;
+    }
+
+    &:active {
+      background-color: $aqua-marine;
+    }
   }
 
-  &--interior {
+  &--interior::after {
+    width: 40px;
+    height: 62px;
+
     background-size: 40px 62px;
     background-image: url("../img/icon-interior.svg");
   }
 
-  &--toy {
-    background-image: url("../img/icon-toy.svg");
+  &--toy::after {
+    width: 60px;
+    height: 60px;
+
     background-size: 60px 60px;
+    background-image: url("../img/icon-toy.svg");
+  }
+
+  &::after {
+    position: absolute;
+
+    content: "";
+    top: 50%;
+    right: 27px;
+
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+
+    opacity: 0.5;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    height: calc(100% + 5px);
+    background-color: $seafoam-blue-two;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    background-color: $seafoam-blue-two;
+
+    a {
+      color: rgba($white, 0.3);
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 

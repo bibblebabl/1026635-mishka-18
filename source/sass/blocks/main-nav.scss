@@ -98,6 +98,16 @@
   top: 50%;
   transform: translateY(-50%);
   left: 30px;
+
+  fill: $black-very-lighen;
+
+  &:hover {
+    fill: $seafoam-blue;
+  }
+
+  &:active {
+    fill: rgba($seafoam-blue, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
