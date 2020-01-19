@@ -45,8 +45,16 @@
   letter-spacing: 0.6px;
 
   &--email {
-    border-bottom: 1px solid #62d1ba;
+    border-bottom: 1px solid $aqua-marine;
     padding-bottom: 5px;
+
+    &:hover {
+      color: $aqua-marine;
+    }
+    &:active {
+      color: rgba($aqua-marine, 0.3);
+      border-bottom: 1px solid rgba($aqua-marine, 0.3);
+    }
   }
 }
 

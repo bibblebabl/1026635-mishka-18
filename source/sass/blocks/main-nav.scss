@@ -22,16 +22,29 @@
   width: 50px;
   height: 50px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 0;
 
   background: transparent;
   border: 0;
-  background-image: url("../img/icon-menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
 
   &--open {
-    background-image: url("../img/icon-menu-open.svg");
+    .main-nav__toggle-icon--close {
+      display: none;
+    }
+
+    .main-nav__toggle-icon--open {
+      display: block;
+    }
+  }
+}
+
+.main-nav__toggle-icon {
+  &--open {
+    display: none;
   }
 }
 

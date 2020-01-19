@@ -8,6 +8,11 @@
   padding-right: 30px;
 }
 
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
   font-size: 19px;
   font-weight: $font-weight-bold;
@@ -15,16 +20,24 @@
   color: $black;
 
   margin-right: 25px;
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 }
 
-.copyright__link {
-  font-size: 0;
+.copyright__icon {
+  height: 60px;
+  width: 40px;
 
-  svg {
-    height: 60px;
-    width: 40px;
+  fill: $seafoam-blue;
 
-    fill: $seafoam-blue;
+  &:hover {
+    fill: $aqua-marine;
+  }
+
+  &:active {
+    fill: rgba($aqua-marine, 0.3);
   }
 }
 

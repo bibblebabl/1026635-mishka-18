@@ -45,21 +45,22 @@
     margin-top: 125px;
     margin-bottom: 2px;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
   }
 
   .products-list__item {
-    flex-direction: column;
-    flex-basis: 316px;
+    flex: 0 0 315px;
 
-    min-width: 316px;
-    flex-grow: 1;
+    flex-direction: column;
+
+    min-height: 660px;
 
     margin-right: 52px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
