@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 35px 8px 29px;
+  margin: 30px 29px 8px 29px;
   border-collapse: collapse;
 }
 
@@ -67,6 +67,14 @@
   iframe {
     min-height: 457px;
   }
+}
+
+.contacts__iframe-map {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
 }
 
 .contacts__button-wrapper {

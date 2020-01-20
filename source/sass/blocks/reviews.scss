@@ -74,9 +74,9 @@
     content: "";
 
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate3d(-50%, -50%, 0);
 
     width: 50px;
     height: 26px;
