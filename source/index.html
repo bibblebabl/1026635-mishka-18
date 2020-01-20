@@ -7,7 +7,7 @@
 
   <title>HTML Academy: Мишка</title>
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <script>document.createElement("picture");</script>
   <script src="js/picturefill.min.js" async></script>
@@ -27,7 +27,14 @@
         </picture>
       </a>
 
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+        <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" width="18" height="18">
+          <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+        </svg>
+        <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" width="18" height="18">
+          <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
 
       <ul class="main-nav__list main-nav__list--catalog-form">
         <li class="main-nav__item main-nav__item--catalog">
@@ -65,7 +72,7 @@
     </div>
 
     <div class="header__title-wrapper header__title-wrapper--hero">
-      <h1 class="header__title header__title--hero">Милые штуки ручной <br />работы&nbsp;для дома</h1>
+      <h1 class="header__title header__title--hero">Милые штуки ручной&nbsp;<br /> работы&nbsp;для дома</h1>
       <ul class="header__categories categories">
         <li class="categories__item categories__item--interior">
           <a href="#">Предметы интерьера</a>
@@ -117,7 +124,7 @@
             alt="Товар недели">
         </picture>
         <span class="product-of-week__price">Цена: 990 руб.</span>
-        <a class="product-of-week__buy button" href="form.html">Заказать</a>
+        <a class="product-of-week__buy button button--modal" href="form.html">Заказать</a>
       </div>
     </article>
 
@@ -215,7 +222,7 @@
 
   <footer class="footer">
     <a class="footer__logo">
-      <svg class="footer__logo-image" width="102" height="34" aria-label="Мишка">
+      <svg class="footer__logo-icon" width="102" height="34" aria-label="Мишка">
         <use xlink:href="img/sprite.svg#logo-footer"></use>
       </svg>
     </a>
@@ -223,7 +230,7 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <svg width="22" height="21" aria-label="Мы в Инстаграме">
+            <svg class="social__icon" width="22" height="21" aria-label="Мы в Инстаграме">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
@@ -231,14 +238,14 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
 
-            <svg width="15" height="28" aria-label="Мы в Фейсбуке">
+            <svg class="social__icon" width="15" height="28" aria-label="Мы в Фейсбуке">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
-            <svg width="23" height="20" aria-label="Мы в Твиттере">
+            <svg class="social__icon" width="23" height="20" aria-label="Мы в Твиттере">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -246,15 +253,43 @@
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="27" height="34" aria-label="HTML Academy" fill="#63d1bb">
+        <b class="copyright__text">Разработано</b>
+        <svg class="copyright__icon" width="27" height="34" aria-label="HTML Academy">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <script src="./js/menu.js"></script>
+  <section class="modal modal--add-to-cart">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="add-to-cart" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="add-to-cart__fieldset">
+            <legend class="add-to-cart__legend">Выберите размер:</legend>
+            <div class="add-to-cart__inputs-wrapper">
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="S" type="radio" name="size" checked>
+                <span class="add-to-cart__radio">S</span>
+              </label>
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="M" type="radio" name="size">
+                <span class="add-to-cart__radio">M</span>
+              </label>
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="L" type="radio" name="size">
+                <span class="add-to-cart__radio">L</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="add-to-cart__button add-to-cart__button--submit" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </body>

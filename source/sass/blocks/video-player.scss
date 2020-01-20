@@ -7,11 +7,23 @@
 
   width: 102px;
   height: 78px;
-  border: none;
 
   @include absolute-center;
   @include fullwidth-centered-background-image;
 
+  border: none;
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
+}
+
+.video-player__icon {
+  transition: $basic-all-transition;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }

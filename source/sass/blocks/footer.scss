@@ -12,6 +12,19 @@
   display: none;
 }
 
+.footer__logo-icon {
+  fill: #000000;
+  translate: $basic-all-transition;
+
+  &:hover {
+    fill: $aqua-marine;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;

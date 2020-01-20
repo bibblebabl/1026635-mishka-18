@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 35px 8px 29px;
+  margin: 30px 0 8px 29px;
   border-collapse: collapse;
 }
 
@@ -45,8 +45,17 @@
   letter-spacing: 0.6px;
 
   &--email {
-    border-bottom: 1px solid #62d1ba;
+    border-bottom: 1px solid $aqua-marine;
     padding-bottom: 5px;
+
+    &:hover {
+      color: $aqua-marine;
+    }
+
+    &:active {
+      color: rgba($aqua-marine, 0.3);
+      border-bottom: 1px solid rgba($aqua-marine, 0.3);
+    }
   }
 }
 
@@ -59,6 +68,14 @@
   iframe {
     min-height: 457px;
   }
+}
+
+.contacts__iframe-map {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
 }
 
 .contacts__button-wrapper {

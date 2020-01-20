@@ -1,14 +1,16 @@
 body {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
+  position: relative;
 
   max-width: 1150px;
 
   margin: 0 auto;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 
   font-family: $font-family-default;
   font-weight: $font-weight-default;
@@ -32,4 +34,10 @@ a {
 input,
 textarea {
   font-family: inherit;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1150px;
+  }
 }

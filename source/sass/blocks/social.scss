@@ -4,6 +4,19 @@
   border-bottom: 2px solid $gray-dark;
 }
 
+.social__icon {
+  fill: $black;
+
+  &:hover {
+    fill: $aqua-marine;
+  }
+
+  &:active {
+    fill: $aqua-marine;
+    opacity: 0.3;
+  }
+}
+
 .social__list {
   @include reset-list;
 
