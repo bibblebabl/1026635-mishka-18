@@ -1,5 +1,5 @@
 .reviews {
-  padding: 24px 31px 45px;
+  padding: 19px 30px 45px 31px;
 }
 
 .reviews__title {
@@ -7,7 +7,7 @@
   font-weight: $font-weight-bold;
   line-height: 1.2;
   color: $black;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
 
   margin: 0 0 23px 0;
 }
@@ -19,24 +19,28 @@
 }
 
 .reviews__description {
+  margin: 0 0 27px 0;
+
   font-size: 15px;
   line-height: 2;
   color: $greyish-brown;
-  margin: 0 0 27px 0;
-  letter-spacing: 0.4px;
+
+  letter-spacing: 0px;
 }
 
 .reviews__author {
+  margin: 0 0 9px;
+
   font-size: 17px;
   font-weight: $font-weight-bold;
   color: $black;
 
-  margin: 0 0 11px 0;
+  letter-spacing: 0.2px;
 }
 
 .reviews__username {
   margin: 0;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
 
   a {
     color: $greyish-brown;
@@ -44,11 +48,10 @@
 }
 
 .reviews__controls {
-  display: flex;
-
   width: 100%;
+  margin-bottom: 34px;
 
-  margin-bottom: 38px;
+  display: flex;
 }
 
 .reviews__control {

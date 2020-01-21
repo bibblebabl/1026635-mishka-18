@@ -5,7 +5,6 @@
   align-items: center;
 
   justify-content: center;
-  padding-right: 30px;
 }
 
 .copyright__link {
@@ -27,8 +26,8 @@
 }
 
 .copyright__icon {
-  height: 60px;
-  width: 40px;
+  width: 27px;
+  height: 34px;
 
   fill: $seafoam-blue;
 
@@ -46,6 +45,11 @@
     padding-right: 0;
   }
 
+  .copyright__icon {
+    height: 60px;
+    width: 40px;
+  }
+
   .copyright__text {
     margin-right: 21px;
   }
@@ -54,5 +58,11 @@
     svg {
       margin-right: -8px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    // padding-right: 30px;
   }
 }

@@ -1,5 +1,5 @@
 .features {
-  margin: 74px 32px 34px 32px;
+  margin: 69px 31px 34px;
 }
 
 .features__title {
@@ -18,17 +18,17 @@
 .features__item {
   position: relative;
 
+  padding-top: 53px;
+  padding-right: 0;
+  margin-bottom: 24px;
+
   font-size: 17px;
   font-weight: $font-weight-bold;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.1px;
 
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 45px 35px;
-
-  padding-top: 53px;
-  padding-right: 0;
-  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
@@ -41,29 +41,29 @@
 
   &--scandinavian {
     background-image: url("../img/icon-feature-money.svg");
-    background-position: 0 -4px;
+    background-position: 0 0;
   }
 
   &--likes {
     background-image: url("../img/icon-feature-heart.svg");
-    background-position: 6px 3px;
+    background-position: 8px 7px;
     background-size: 32px;
   }
 
   &--handmade {
     background-image: url("../img/icon-feature-ball.svg");
-    background-position: -2px 0;
+    background-position: -2px 4px;
   }
 
   &--local-support {
     background-image: url("../img/icon-feature-rocket.svg");
-    background-position: -7px 0;
+    background-position: -6px 5px;
     background-size: 55px;
   }
 
   &--packing {
     background-image: url("../img/icon-feature-gift.svg");
-    background-position: 0 0;
+    background-position: -3px 2px;
   }
 }
 

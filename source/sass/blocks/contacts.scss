@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 0 8px 29px;
+  margin: 25px 0 8px 29px;
   border-collapse: collapse;
 }
 
@@ -33,16 +33,24 @@
   margin-bottom: 26px;
   letter-spacing: -0.1px;
   line-height: 2;
+
+  td {
+    vertical-align: text-top;
+  }
 }
 
 .contacts__text {
-  padding-right: 32px;
+  padding-right: 31px;
   min-width: 78px;
+}
+
+.contacts__value {
+  max-width: 160px;
 }
 
 .contacts__link {
   color: $greyish-brown;
-  letter-spacing: 0.6px;
+  letter-spacing: -0.2px;
 
   &--email {
     border-bottom: 1px solid $aqua-marine;
@@ -57,11 +65,6 @@
       border-bottom: 1px solid rgba($aqua-marine, 0.3);
     }
   }
-}
-
-.contacts__text,
-.contacts__value {
-  vertical-align: text-top;
 }
 
 .contacts__map {

@@ -16,11 +16,11 @@
   background-color: $gray-light;
 
   &--hero {
-    justify-content: flex-start;
-
-    min-height: 490px;
+    min-height: 486px;
     padding-top: 68px;
     padding-bottom: 0;
+
+    justify-content: flex-start;
 
     background-color: $gray-light;
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -43,7 +43,7 @@
   padding: 0;
 
   font-size: 27px;
-  line-height: 1.16;
+  line-height: 1.1;
   font-weight: $font-weight-bold;
   color: $very-dark-brown;
   letter-spacing: 0.2px;
