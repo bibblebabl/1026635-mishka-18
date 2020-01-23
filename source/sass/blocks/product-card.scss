@@ -10,15 +10,15 @@
 }
 
 .product-card__title {
-  @include no-margin-no-padding;
+  max-width: 200px;
 
+  @include no-margin-no-padding;
   margin-bottom: 13px;
 
   font-size: 17px;
   font-weight: $font-weight-bold;
-  letter-spacing: 0.9px;
-  line-height: 1.45;
-
+  letter-spacing: 0;
+  line-height: 1.15;
   color: $black;
 }
 
@@ -41,6 +41,7 @@
 
 .product-card__footer {
   padding-top: 22px;
+  padding-right: 21px;
 
   display: flex;
   justify-content: space-between;
@@ -62,6 +63,10 @@
   &:active {
     fill: rgba($seafoam-blue, 0.3);
   }
+}
+
+.product-card__size {
+  letter-spacing: 0.2px;
 }
 
 @media (min-width: $tablet-width) {

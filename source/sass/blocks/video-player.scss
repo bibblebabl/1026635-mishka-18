@@ -3,13 +3,11 @@
 }
 
 .video-player__button {
-  position: absolute;
-
-  width: 102px;
-  height: 78px;
-
   @include absolute-center;
-  @include fullwidth-centered-background-image;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   background-color: transparent;

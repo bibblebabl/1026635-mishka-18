@@ -25,7 +25,9 @@
   position: relative;
 
   width: 100%;
-  padding: 29px 34px 26px 90px;
+  min-height: 96px;
+
+  padding-left: 90px;
   margin: 0;
 
   display: flex;
@@ -43,8 +45,8 @@
 }
 
 .how-its-done__description {
-  padding: 24px 50px 0 34px;
-  margin: 0 0 26px 0;
+  padding: 24px 40px 0 34px;
+  margin: 0 0 23px;
 
   font-size: 13px;
   line-height: 1.9;
