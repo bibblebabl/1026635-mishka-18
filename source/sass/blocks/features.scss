@@ -108,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 66px 169px 35px;
+    padding: 76px 170px 35px;
     margin: 0 50px 0 50px;
   }
 
@@ -116,7 +116,15 @@
     font-size: 53px;
   }
 
+  .features__list {
+    padding: 0 4px;
+  }
+
   .features__item {
     padding-right: 0;
+    margin-bottom: 59px;
+
+    line-height: 1.09;
+    letter-spacing: 0.1px;
   }
 }

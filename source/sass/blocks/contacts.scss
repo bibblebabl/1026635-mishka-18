@@ -153,16 +153,17 @@
 @media (min-width: $desktop-width) {
   .contacts {
     min-height: 663px;
-    padding: 167px 51px 105px 225px;
+    padding: 166px 51px 105px 224px;
     background-position: 112px 157px;
   }
 
   .contacts__title {
-    font-size: 53px;
-
-    margin-left: 0;
+    margin-left: -3px;
     margin-bottom: 44px;
     padding-left: 0;
+
+    font-size: 53px;
+    letter-spacing: -0.4px;
   }
 
   .contacts__table {
@@ -170,15 +171,14 @@
   }
 
   .contacts__link {
-    letter-spacing: 0.6px;
+    letter-spacing: 0px;
   }
 
-  .contacts__text {
-    padding-right: 19px;
-  }
-
+  .contacts__text,
   .contacts__value {
-    letter-spacing: 0;
+    padding-right: 0;
+
+    letter-spacing: 0px;
   }
 
   .contacts__row {

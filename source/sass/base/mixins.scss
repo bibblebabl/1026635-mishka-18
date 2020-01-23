@@ -54,6 +54,10 @@
     background-size: auto 100%;
     background-repeat: repeat-x;
   }
+
+  &::before {
+    height: 23px;
+  }
 }
 
 @mixin zigzag-fill {
@@ -74,6 +78,12 @@
     background-position: 0%;
     background-size: auto 100%;
     background-repeat: repeat-x;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+    }
   }
 }
 

@@ -221,13 +221,15 @@
   }
 
   .main-nav__icon {
-    &--cart {
-      margin-right: 30px;
-    }
+    left: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__item {
+    letter-spacing: 0px;
+  }
+
   .main-nav__logo {
     justify-content: center;
 
@@ -268,16 +270,16 @@
 
   .main-nav__item {
     &--catalog {
-      padding-right: 29px;
+      padding-right: 36px;
       margin-right: 0;
     }
 
     &--cart {
-      padding-left: 79px;
+      padding-left: 85px;
     }
 
     &--form {
-      padding-left: 37px;
+      padding-left: 33px;
 
       border-left: 1px solid $gray-dark;
     }

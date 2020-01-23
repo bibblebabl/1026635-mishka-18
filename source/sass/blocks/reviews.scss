@@ -170,12 +170,16 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 174px;
-    padding-bottom: 100px;
-    padding-top: 70px;
+    padding-left: 171px;
+    padding-bottom: 94px;
+    padding-top: 66px;
 
-    margin-left: 48px;
+    margin-left: 50px;
     margin-bottom: 67px;
+  }
+
+  .reviews__list {
+    padding-left: 4px;
   }
 
   .reviews__title {
@@ -186,10 +190,23 @@
 
   .reviews__description {
     padding-right: 100px;
-    margin-bottom: 38px;
+
+    margin-bottom: 42px;
+
+    line-height: 1.86;
   }
 
   .reviews__controls {
-    bottom: 95px;
+    right: 70px;
+    top: 305px;
+  }
+
+  .reviews__author {
+    letter-spacing: 0.3px;
+  }
+
+  .reviews__write {
+    top: 76px;
+    right: 50px;
   }
 }
