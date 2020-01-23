@@ -226,10 +226,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__item {
-    letter-spacing: 0px;
-  }
-
   .main-nav__logo {
     justify-content: center;
 
@@ -269,6 +265,8 @@
   }
 
   .main-nav__item {
+    letter-spacing: 0;
+
     &--catalog {
       padding-right: 36px;
       margin-right: 0;

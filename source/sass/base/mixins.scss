@@ -55,8 +55,10 @@
     background-repeat: repeat-x;
   }
 
-  &::before {
-    height: 23px;
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 23px;
+    }
   }
 }
 

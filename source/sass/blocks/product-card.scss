@@ -112,11 +112,13 @@
 
 @media (min-width: $desktop-width) {
   .product-card__info {
+    min-height: 197px;
+
     padding: 20px 32px 26px 25px;
   }
 
   .product-card__size {
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   .product-card__image {
@@ -134,10 +136,6 @@
   .product-card__title {
     margin: 0 0 8px;
     line-height: 1.2;
-  }
-
-  .product-card__info {
-    min-height: 197px;
   }
 
   .product-card__price {

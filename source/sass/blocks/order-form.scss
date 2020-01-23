@@ -452,8 +452,9 @@
 @media (min-width: $desktop-width) {
   .order-form__note {
     max-width: 960px;
-
     padding-left: 225px;
+
+    margin-bottom: 8px;
     margin-top: 120px;
   }
 
@@ -469,10 +470,6 @@
       top: 9px;
       left: 113px;
     }
-  }
-
-  .order-form__note {
-    margin-bottom: 8px;
   }
 
   .order-form__wrapper {
