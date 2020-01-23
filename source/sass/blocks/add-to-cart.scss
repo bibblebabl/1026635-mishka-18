@@ -56,6 +56,10 @@
   border: solid 2px rgba($greyish-brown, 0.1);
 
   background-color: $white;
+
+  &:hover {
+    border: solid 2px rgba($greyish-brown, 0.3);
+  }
 }
 
 .add-to-cart__button {

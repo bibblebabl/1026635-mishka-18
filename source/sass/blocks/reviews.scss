@@ -171,7 +171,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 171px;
-    padding-bottom: 94px;
+    padding-bottom: 98px;
     padding-top: 66px;
 
     margin-left: 50px;
@@ -189,11 +189,11 @@
   }
 
   .reviews__description {
-    padding-right: 100px;
-
-    margin-bottom: 42px;
+    padding-right: 80px;
+    margin-bottom: 38px;
 
     line-height: 1.86;
+    letter-spacing: 0.2px;
   }
 
   .reviews__controls {
@@ -202,7 +202,7 @@
   }
 
   .reviews__author {
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
   }
 
   .reviews__write {

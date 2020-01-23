@@ -152,7 +152,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    min-height: 663px;
+    min-height: 659px;
     padding: 166px 51px 105px 224px;
     background-position: 112px 157px;
   }
@@ -171,14 +171,20 @@
   }
 
   .contacts__link {
-    letter-spacing: 0;
+    letter-spacing: -0.1px;
+
+    &--email {
+      padding-bottom: 3px;
+    }
   }
 
   .contacts__text,
   .contacts__value {
+    min-width: 77px;
+
     padding-right: 0;
 
-    letter-spacing: 0;
+    letter-spacing: -0.1px;
   }
 
   .contacts__row {
@@ -207,5 +213,6 @@
 
   .contacts__write-us {
     margin: 0;
+    letter-spacing: -0.1px;
   }
 }

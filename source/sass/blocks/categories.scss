@@ -73,20 +73,22 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    display: flex;
+    min-height: 119px;
     padding: 0 51px;
+
+    display: flex;
   }
 
   .categories__item {
-    height: 119px;
+    height: height;
 
     padding: 30px 36px 29px 37px;
     line-height: 1.5;
     letter-spacing: 1.1px;
 
     &:hover {
-      transform: translateY(-5px);
-      height: calc(100% + 5px);
+      margin-top: -5px;
+
       background-color: $seafoam-blue-two;
 
       &::after {
@@ -105,5 +107,11 @@
         opacity: 0.3;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__item {
+    letter-spacing: 0.6px;
   }
 }

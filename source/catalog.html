@@ -223,21 +223,22 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/htmlacademy">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
             <svg class="social__icon" width="22" height="21" aria-label="Мы в Инстаграме">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+
             <svg class="social__icon" width="15" height="28" aria-label="Мы в Фейсбуке">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
             <svg class="social__icon" width="23" height="20" aria-label="Мы в Твиттере">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
@@ -253,36 +254,35 @@
         </svg>
       </a>
     </div>
-    <section class="modal modal--add-to-cart">
-      <div class="modal__overlay">
-        <div class="modal__container">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <form class="add-to-cart" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="add-to-cart__fieldset">
-              <legend class="add-to-cart__legend">Выберите размер:</legend>
-              <div class="add-to-cart__inputs-wrapper">
-                <label class="add-to-cart__label">
-                  <input class="add-to-cart__input add-to-cart__input--radio" value="S" type="radio" name="size"
-                    checked>
-                  <span class="add-to-cart__radio">S</span>
-                </label>
-                <label class="add-to-cart__label">
-                  <input class="add-to-cart__input add-to-cart__input--radio" value="M" type="radio" name="size">
-                  <span class="add-to-cart__radio">M</span>
-                </label>
-                <label class="add-to-cart__label">
-                  <input class="add-to-cart__input add-to-cart__input--radio" value="L" type="radio" name="size">
-                  <span class="add-to-cart__radio">L</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <button class="add-to-cart__button add-to-cart__button--submit" type="submit">Добавить</button>
-          </form>
-        </div>
-      </div>
-    </section>
   </footer>
+  <section class="modal modal--add-to-cart">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="add-to-cart" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="add-to-cart__fieldset">
+            <legend class="add-to-cart__legend">Выберите размер:</legend>
+            <div class="add-to-cart__inputs-wrapper">
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="S" type="radio" name="size" checked>
+                <span class="add-to-cart__radio">S</span>
+              </label>
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="M" type="radio" name="size">
+                <span class="add-to-cart__radio">M</span>
+              </label>
+              <label class="add-to-cart__label">
+                <input class="add-to-cart__input add-to-cart__input--radio" value="L" type="radio" name="size">
+                <span class="add-to-cart__radio">L</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="add-to-cart__button add-to-cart__button--submit" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </section>
   <script src="js/script.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

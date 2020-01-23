@@ -38,4 +38,11 @@
     border: none;
     padding: 29px 0 20px;
   }
+
+  .social__icon {
+    &--instagram {
+      margin-left: -7px;
+      margin-top: 3px;
+    }
+  }
 }

@@ -41,7 +41,7 @@
 @media (min-width: $desktop-width) {
   .products-list {
     padding: 0 50px;
-    margin-top: 125px;
+    margin-top: 121px;
     margin-bottom: 2px;
 
     display: flex;
@@ -51,13 +51,13 @@
   }
 
   .products-list__item {
-    flex: 0 0 315px;
+    flex: 0 0 316px;
 
     flex-direction: column;
 
     min-height: 660px;
 
-    margin-right: 52px;
+    margin-right: 51px;
 
     &:nth-child(3n) {
       margin-right: 0;

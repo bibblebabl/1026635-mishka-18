@@ -195,7 +195,7 @@
       order: 3;
 
       margin-left: 0;
-      max-height: 60px;
+      max-height: 52px;
 
       font-size: 15px;
       font-weight: 300;
@@ -228,6 +228,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__logo {
     justify-content: center;
+    margin: 4px 0 0 -1px;
 
     img {
       width: 149px;
@@ -255,7 +256,7 @@
     }
 
     &--arrivals-sale {
-      max-height: 65px;
+      max-height: 52px;
 
       display: flex;
       flex-grow: 1;
@@ -273,7 +274,7 @@
     }
 
     &--cart {
-      padding-left: 85px;
+      padding-left: 84px;
     }
 
     &--form {
