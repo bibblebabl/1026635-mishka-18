@@ -99,13 +99,11 @@
 
 @media (min-width: $desktop-width) {
   .header__title-wrapper {
-    // padding-top: 155px;
-    // padding-bottom: 100px;
-
     padding-top: 95px;
     padding-bottom: 110px;
 
     &--hero {
+      padding-top: 155px;
       padding-bottom: 0;
       background-image: url("../img/hero-desktop@1x.jpg");
 

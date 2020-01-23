@@ -452,14 +452,23 @@
 @media (min-width: $desktop-width) {
   .order-form__note {
     max-width: 960px;
-    padding-left: 225px;
 
-    margin-bottom: 8px;
-    margin-top: 120px;
+    margin-bottom: 13px;
+    margin-top: 115px;
+
+    padding-left: 225px;
+  }
+
+  .order-form__input {
+    min-height: 54px;
   }
 
   .order-form__fieldset {
-    padding-left: 224px;
+    padding-left: 226px;
+
+    &--tel {
+      margin-bottom: 21px;
+    }
   }
 
   .order-form__legend {
@@ -486,8 +495,10 @@
     flex-basis: 33%;
 
     &--checkbox {
-      max-width: 264px;
+      max-width: 262px;
       min-height: 50px;
+
+      padding-left: 81px;
 
       &:last-child,
       &:nth-last-child(2),
