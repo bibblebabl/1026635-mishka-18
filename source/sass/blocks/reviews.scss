@@ -107,7 +107,7 @@
   .reviews {
     position: relative;
 
-    padding: 80px 51px 140px;
+    padding: 80px 51px 123px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -127,14 +127,15 @@
   }
 
   .reviews__description {
+    margin: 0 0 54px 0;
+
     font-size: 17px;
     line-height: 1.86;
-    letter-spacing: 0.5px;
-    margin: 0 0 54px 0;
+    letter-spacing: 0px;
   }
 
   .reviews__author {
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
   }
 
   .reviews__list {
@@ -143,12 +144,11 @@
 
   .reviews__controls {
     position: absolute;
+    right: 67px;
+    top: 360px;
 
     width: 137px;
     margin: 0;
-
-    right: 67px;
-    bottom: 135px;
   }
 
   .reviews__control {
@@ -162,7 +162,7 @@
 
   .reviews__write {
     position: absolute;
-    top: 80px;
+    top: 83px;
     right: 48px;
     width: 175px;
   }

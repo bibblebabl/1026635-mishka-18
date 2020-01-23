@@ -74,7 +74,8 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin: 52px 50px 24px;
+    padding: 63px 50px 24px 50px;
+    margin: 0;
 
     @include zigzag-line;
   }
@@ -93,12 +94,15 @@
   }
 
   .features__item {
-    flex-basis: 50%;
     width: 50%;
     margin-bottom: 55px;
-    padding-right: 40px;
+    padding-right: 28px;
+
+    flex-basis: 50%;
 
     font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
   }
 }
 

@@ -54,17 +54,15 @@
 
 @media (min-width: $tablet-width) {
   .product-of-week {
-    padding: 48px 50px 0;
+    padding: 38px 50px 54px;
 
     display: flex;
     flex-direction: column;
-
-    padding-bottom: 68px;
   }
 
   .product-of-week__titles {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding-right: 23px;
 
     margin-bottom: 55px;
@@ -81,12 +79,12 @@
   }
 
   .product-of-week__description {
-    max-width: 282px;
-    margin: -7px 0 38px 0;
+    max-width: 285px;
+    margin: -7px 0 38px;
 
     font-size: 17px;
     line-height: 1.76;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.1px;
   }
 
   .product-of-week__content-wrapper {
@@ -113,7 +111,8 @@
   }
 
   .product-of-week__price {
-    margin-bottom: 31px;
+    margin-top: 28px;
+    margin-bottom: 32px;
 
     font-size: 20px;
     font-weight: $font-weight-bold;
@@ -124,6 +123,7 @@
 @media (min-width: $desktop-width) {
   .product-of-week {
     margin: 75px 51px 83px 172px;
+
     position: relative;
     padding-bottom: 0;
   }

@@ -43,21 +43,15 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding-right: 0;
-  }
-
-  .copyright__icon {
-    height: 60px;
-    width: 40px;
+    justify-content: flex-end;
   }
 
   .copyright__text {
-    margin-right: 21px;
+    margin-right: 27px;
   }
 
   .copyright__link {
-    svg {
-      margin-right: -8px;
-    }
+    padding-top: 4px;
   }
 }
 

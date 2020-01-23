@@ -78,9 +78,11 @@
   }
 
   .categories__item {
-    padding: 35px 36px 34px 37px;
+    height: 119px;
+
+    padding: 30px 36px 29px 37px;
     line-height: 1.5;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.1px;
 
     &:hover {
       transform: translateY(-5px);
