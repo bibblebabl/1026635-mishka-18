@@ -25,6 +25,10 @@
   &--small-margin {
     margin-bottom: 7px;
   }
+
+  &--comment {
+    margin-bottom: 7px;
+  }
 }
 
 .order-form__input-wrapper {
@@ -101,6 +105,31 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.order-form__checkbox {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+  border: solid 2px $greyish-brown;
+
+  &:hover {
+    border: solid 2px $seafoam-blue;
+  }
+
+  &:active {
+    border: solid 2px rgba($greyish-brown, 0.3);
+  }
+
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .order-form__input {
@@ -206,31 +235,6 @@
   }
 }
 
-.order-form__checkbox {
-  position: absolute;
-
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-
-  width: 40px;
-  height: 40px;
-
-  background-color: transparent;
-  border: solid 2px $greyish-brown;
-
-  &:hover {
-    border: solid 2px $seafoam-blue;
-  }
-
-  &:active {
-    border: solid 2px rgba($greyish-brown, 0.3);
-  }
-
-  overflow: hidden;
-  cursor: pointer;
-}
-
 .order-form__textarea {
   max-width: 100%;
   width: 100%;
@@ -261,6 +265,7 @@
 .order-form__small {
   font-size: 13px;
   line-height: 1.85;
+  letter-spacing: 0.6px;
 
   color: $greyish-brown;
 }
@@ -406,6 +411,11 @@
     background-size: 33px 22px;
   }
 
+  .order-form__textarea {
+    padding: 14px 17px;
+    letter-spacing: 1.1px;
+  }
+
   .order-form__inputs-wrapper {
     width: 70%;
   }
@@ -418,15 +428,17 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
 
-    padding: 0 51px 50px;
+    padding: 0 51px 47px;
   }
 
   .order-form__small {
+    padding-top: 5px;
+
     font-size: 17px;
     line-height: 1.76;
     text-align: right;
+    letter-spacing: -0.1px;
   }
 
   .order-form__submit {
@@ -450,12 +462,26 @@
   }
 
   .order-form__legend {
-    left: 114px;
+    top: 14px;
+    left: 110px;
+
+    &--type {
+      top: 9px;
+      left: 113px;
+    }
+  }
+
+  .order-form__note {
+    margin-bottom: 8px;
   }
 
   .order-form__wrapper {
     &--with-right-padding {
       padding-right: 225px;
+    }
+
+    &--textarea {
+      padding-bottom: 46px;
     }
   }
 
@@ -481,6 +507,10 @@
     }
   }
 
+  .order-form__small {
+    padding-top: 8px;
+  }
+
   .order-form__textarea {
     padding: 12px 17px;
     letter-spacing: 1px;
@@ -491,8 +521,8 @@
   }
 
   .order-form__footer {
-    margin-top: -4px;
     padding-left: 225px;
     padding-right: 225px;
+    padding-bottom: 53px;
   }
 }

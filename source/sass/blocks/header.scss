@@ -6,7 +6,9 @@
 
 .header__title-wrapper {
   position: relative;
+
   min-height: 173px;
+  padding-bottom: 13px;
 
   @include flex-vertical-center;
   justify-content: center;
@@ -97,8 +99,11 @@
 
 @media (min-width: $desktop-width) {
   .header__title-wrapper {
-    padding-top: 155px;
-    padding-bottom: 100px;
+    // padding-top: 155px;
+    // padding-bottom: 100px;
+
+    padding-top: 95px;
+    padding-bottom: 110px;
 
     &--hero {
       padding-bottom: 0;
