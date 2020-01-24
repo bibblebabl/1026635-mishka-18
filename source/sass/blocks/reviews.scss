@@ -15,7 +15,7 @@
 .reviews__list {
   @include reset-list;
 
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .reviews__description {
@@ -49,7 +49,7 @@
 
 .reviews__controls {
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 
   display: flex;
 }
@@ -63,6 +63,7 @@
   flex: 1;
   height: 52px;
 
+  background-color: $white;
   border: solid 1px $gray-light;
 
   &--left::after {
@@ -107,7 +108,9 @@
   .reviews {
     position: relative;
 
-    padding: 80px 51px 123px;
+    // padding: 80px 51px 123px;
+    padding: 80px 51px 53px;
+    margin-bottom: 70px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -123,7 +126,7 @@
     font-size: 43px;
     font-weight: $font-weight-bold;
     color: $black;
-    margin: 0 0 47px 0;
+    margin: 0 0 47px -4px;
   }
 
   .reviews__description {
