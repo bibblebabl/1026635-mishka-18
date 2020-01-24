@@ -5,7 +5,6 @@
   align-items: center;
 
   justify-content: center;
-  padding-right: 30px;
 }
 
 .copyright__link {
@@ -20,6 +19,7 @@
   color: $black;
 
   margin-right: 25px;
+  // margin-right: 28px;
 
   &:active {
     color: rgba($black, 0.3);
@@ -27,8 +27,8 @@
 }
 
 .copyright__icon {
-  height: 60px;
-  width: 40px;
+  width: 27px;
+  height: 34px;
 
   fill: $seafoam-blue;
 
@@ -44,15 +44,20 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding-right: 0;
+    justify-content: flex-end;
   }
 
   .copyright__text {
-    margin-right: 21px;
+    margin-right: 28px;
   }
 
   .copyright__link {
-    svg {
-      margin-right: -8px;
-    }
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    // padding-right: 30px;
   }
 }

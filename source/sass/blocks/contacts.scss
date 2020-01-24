@@ -19,7 +19,7 @@
 }
 
 .contacts__table {
-  margin: 30px 0 8px 29px;
+  margin: 25px 0 8px 29px;
   border-collapse: collapse;
 }
 
@@ -33,16 +33,24 @@
   margin-bottom: 26px;
   letter-spacing: -0.1px;
   line-height: 2;
+
+  td {
+    vertical-align: text-top;
+  }
 }
 
 .contacts__text {
-  padding-right: 32px;
+  padding-right: 31px;
   min-width: 78px;
+}
+
+.contacts__value {
+  max-width: 160px;
 }
 
 .contacts__link {
   color: $greyish-brown;
-  letter-spacing: 0.6px;
+  letter-spacing: -0.2px;
 
   &--email {
     border-bottom: 1px solid $aqua-marine;
@@ -57,11 +65,6 @@
       border-bottom: 1px solid rgba($aqua-marine, 0.3);
     }
   }
-}
-
-.contacts__text,
-.contacts__value {
-  vertical-align: text-top;
 }
 
 .contacts__map {
@@ -89,42 +92,44 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    padding-top: 76px;
+
     background-image: url("../img/icon-flag.svg");
     background-size: 47px 81px;
-    background-position: right 51px top 45px;
+    background-position: right 51px top 62px;
     background-repeat: no-repeat;
-
-    padding-top: 62px;
 
     @include zigzag-line;
   }
 
   .contacts__title {
+    padding-left: 49px;
+
     font-size: 43px;
     font-weight: $font-weight-bold;
     line-height: 1.16;
     color: $black;
-
-    padding-left: 49px;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.1px;
   }
 
   .contacts__table {
-    margin: 46px 53px 31px;
+    margin: 48px 53px 31px;
   }
 
   .contacts__text {
     min-width: 75px;
+    padding-right: 21px;
+
     letter-spacing: 0.8px;
-    padding-right: 24px;
   }
 
   .contacts__value {
     letter-spacing: 0.9px;
+    max-width: none;
   }
 
   .contacts__link {
-    letter-spacing: 1.6px;
+    letter-spacing: 1px;
   }
 
   .contacts__table-body {
@@ -132,8 +137,10 @@
   }
 
   .contacts__row {
-    &:not(:last-child) {
-      margin-right: 55px;
+    margin-right: 53px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -145,33 +152,40 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    min-height: 663px;
-    padding: 167px 51px 105px 225px;
+    min-height: 655px;
+    padding: 168px 51px 100px 224px;
+
     background-position: 112px 157px;
   }
 
   .contacts__title {
-    font-size: 53px;
-
-    margin-left: 0;
+    margin-left: -3px;
     margin-bottom: 44px;
     padding-left: 0;
+
+    font-size: 53px;
+    letter-spacing: -0.4px;
   }
 
   .contacts__table {
-    margin: 0 0 80px 0;
+    margin: 0 0 78px 0;
   }
 
   .contacts__link {
-    letter-spacing: 0.6px;
+    letter-spacing: -0.1px;
+
+    &--email {
+      padding-bottom: 3px;
+    }
   }
 
-  .contacts__text {
-    padding-right: 19px;
-  }
-
+  .contacts__text,
   .contacts__value {
-    letter-spacing: 0;
+    min-width: 77px;
+
+    padding-right: 0;
+
+    letter-spacing: -0.1px;
   }
 
   .contacts__row {
@@ -200,5 +214,6 @@
 
   .contacts__write-us {
     margin: 0;
+    letter-spacing: -0.1px;
   }
 }

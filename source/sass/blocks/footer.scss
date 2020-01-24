@@ -51,7 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 32px 50px 32px;
+    min-height: 143px;
+    padding: 25px 50px;
   }
 
   .footer__copyright {
