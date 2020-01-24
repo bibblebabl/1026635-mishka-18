@@ -459,10 +459,6 @@
     padding-left: 225px;
   }
 
-  .order-form__input {
-    min-height: 54px;
-  }
-
   .order-form__fieldset {
     padding-left: 226px;
 
@@ -509,6 +505,8 @@
   }
 
   .order-form__input {
+    min-height: 54px;
+
     &--checkbox {
       width: 54px;
       height: 52px;
