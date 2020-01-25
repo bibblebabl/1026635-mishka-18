@@ -1,5 +1,10 @@
 .social {
+  @include reset-list;
   padding: 25px 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-bottom: 2px solid $gray-dark;
 }
@@ -17,14 +22,6 @@
   }
 }
 
-.social__list {
-  @include reset-list;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .social__item {
   margin-right: 40px;
 
@@ -35,8 +32,11 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    border: none;
     padding: 29px 0 20px;
+
+    flex-basis: 33%;
+
+    border: none;
   }
 
   .social__icon {

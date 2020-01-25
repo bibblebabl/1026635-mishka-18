@@ -1,6 +1,6 @@
 var mainNavLists = document.querySelectorAll('.main-nav__list');
 var navToggle = document.querySelector('.main-nav__toggle');
-var modalButtons = document.querySelectorAll('.button--modal');
+var modalButtons = document.querySelectorAll('.modal-button');
 var modal = document.querySelector('.modal');
 
 var ESC_KEYCODE = 27

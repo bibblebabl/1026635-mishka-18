@@ -8,6 +8,8 @@
 }
 
 .contacts__title {
+  @include no-margin-no-padding;
+
   font-size: 18px;
   font-weight: $font-weight-bold;
 
