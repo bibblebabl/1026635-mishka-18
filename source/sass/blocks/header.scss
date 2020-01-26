@@ -20,7 +20,7 @@
   &--hero {
     min-height: 486px;
     padding-top: 68px;
-    padding-bottom: 0;
+    padding-bottom: 250px;
 
     justify-content: flex-start;
 
@@ -67,7 +67,8 @@
     &--hero {
       min-height: 746px;
       padding-top: 154px;
-      padding-bottom: 0;
+      padding-bottom: 250px;
+
       background-image: url("../img/hero-tablet@1x.jpg");
 
       @media (min-resolution: $retina-dppx) {
@@ -104,7 +105,7 @@
 
     &--hero {
       padding-top: 155px;
-      padding-bottom: 0;
+      padding-bottom: 250px;
       background-image: url("../img/hero-desktop@1x.jpg");
 
       @media (min-resolution: $retina-dppx) {
