@@ -112,7 +112,8 @@
     margin-bottom: 70px;
 
     background-color: $white;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg"),
+      linear-gradient(90deg, rgba(243, 243, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 46% 100%;
