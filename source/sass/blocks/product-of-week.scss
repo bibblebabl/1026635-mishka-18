@@ -100,10 +100,12 @@
     position: absolute;
 
     right: 0;
-    bottom: 0;
+    top: 0;
 
     width: 50%;
     height: 100%;
+
+    max-height: 404px;
   }
 
   .product-of-week__buy {
@@ -171,6 +173,7 @@
   .product-of-week__image {
     width: 100%;
     max-width: 525px;
+    max-height: 636px;
   }
 
   .product-of-week__content-wrapper {
