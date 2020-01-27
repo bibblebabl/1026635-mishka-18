@@ -40,6 +40,10 @@
       display: block;
     }
   }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .main-nav__toggle-icon {

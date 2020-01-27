@@ -5,6 +5,8 @@ var modal = document.querySelector('.modal');
 
 var ESC_KEYCODE = 27
 
+navToggle.classList.remove('main-nav__toggle--no-js');
+
 var toggleMainNavClosed = () => {
   mainNavLists.forEach(listItem => {
     var isClosed = listItem.classList.contains('main-nav__list--closed')
