@@ -86,11 +86,11 @@
   }
 
   .features__list {
-    max-height: 490px;
+    min-height: 460px;
     width: 100%;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
   }
 
   .features__item {
@@ -98,11 +98,30 @@
     margin-bottom: 55px;
     padding-right: 28px;
 
-    flex-basis: 50%;
-
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.5px;
+
+    &--scandinavian {
+      order: 3;
+      background-position: 2px -4px;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--local-support {
+      order: 4;
+    }
+
+    &--packing {
+      order: 5;
+    }
   }
 }
 
@@ -121,6 +140,8 @@
   }
 
   .features__item {
+    max-width: 375px;
+
     padding-right: 0;
     margin-bottom: 59px;
 
