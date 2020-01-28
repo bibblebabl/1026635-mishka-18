@@ -289,6 +289,9 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
+    max-width: 1150px;
+    margin: 0 auto;
+
     padding-left: 0;
     padding-right: 0;
   }
@@ -485,7 +488,7 @@
 
     &--type {
       top: 9px;
-      left: 113px;
+      left: 112px;
     }
   }
 
