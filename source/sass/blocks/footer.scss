@@ -1,11 +1,15 @@
 .footer {
   width: 100%;
+
+  background-color: $gray-light;
+}
+
+.footer__wrapper {
+  width: 100%;
   padding: 0 30px;
 
   display: flex;
   flex-direction: column;
-
-  background-color: $gray-light;
 }
 
 .footer__logo {
@@ -26,7 +30,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,8 +50,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
+  .footer__wrapper {
+    max-width: 1150px;
     min-height: 143px;
+
+    margin: 0 auto;
     padding: 25px 50px;
   }
 

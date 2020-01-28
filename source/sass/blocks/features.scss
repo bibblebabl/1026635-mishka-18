@@ -127,8 +127,10 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 76px 170px 35px;
-    margin: 0 50px 0 50px;
+    max-width: 1150px;
+
+    padding: 76px 220px 35px;
+    margin: 0 auto;
   }
 
   .features__title {

@@ -154,10 +154,15 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    min-height: 655px;
-    padding: 168px 51px 100px 224px;
+    max-width: 1150px;
+    min-height: 650px;
 
-    background-position: 112px 157px;
+    padding: 158px 51px 100px 224px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-position: 113px 154px;
   }
 
   .contacts__title {
@@ -170,7 +175,7 @@
   }
 
   .contacts__table {
-    margin: 0 0 78px 0;
+    margin: 0 0 83px 0;
   }
 
   .contacts__link {

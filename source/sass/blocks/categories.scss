@@ -111,6 +111,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .categories__item {
     letter-spacing: 0.6px;
   }

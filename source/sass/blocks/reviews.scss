@@ -174,12 +174,12 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 171px;
-    padding-bottom: 98px;
-    padding-top: 66px;
+    max-width: 1150px;
+    padding: 67px 50px 100px 221px;
+    margin: 0 auto 70px;
 
-    margin-left: 50px;
-    margin-bottom: 67px;
+    background-position: 50px 0;
+    background-size: 350px 100%;
   }
 
   .reviews__list {
@@ -188,6 +188,7 @@
 
   .reviews__title {
     margin-bottom: 43px;
+    margin-left: -1px;
 
     font-size: 53px;
   }

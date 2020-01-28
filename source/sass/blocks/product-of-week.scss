@@ -126,11 +126,10 @@
   .product-of-week {
     position: relative;
 
-    margin: 75px 51px 73px 172px;
+    max-width: 1150px;
 
-    padding-top: 47px;
-    padding-bottom: 0;
-    padding-left: 53px;
+    padding: 121px 103px 73px 225px;
+    margin: 0 auto;
   }
 
   .product-of-week__titles {
@@ -142,10 +141,11 @@
 
   .product-of-week__title {
     max-width: 545px;
+    margin-left: -4px;
 
     font-size: 53px;
     line-height: 1.08;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.2px;
   }
 
   .product-of-week__subtitle {
@@ -174,6 +174,9 @@
     width: 100%;
     max-width: 525px;
     max-height: 636px;
+
+    top: 70px;
+    right: 50px;
   }
 
   .product-of-week__content-wrapper {

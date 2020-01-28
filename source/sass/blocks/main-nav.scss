@@ -230,6 +230,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
   .main-nav__logo {
     justify-content: center;
     margin: 4px 0 0 -1px;

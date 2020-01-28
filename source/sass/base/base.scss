@@ -1,8 +1,6 @@
 body {
   position: relative;
 
-  max-width: 1150px;
-
   margin: 0 auto;
   padding: 0;
 
@@ -34,10 +32,4 @@ a {
 input,
 textarea {
   font-family: inherit;
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    max-width: 1150px;
-  }
 }
